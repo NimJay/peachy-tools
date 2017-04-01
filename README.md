@@ -1,4 +1,4 @@
-![Peachy Tools Logo](http://peachytools.com/favicon.png "Peachy Tools Logo") [peachytools.com](https://peachytools.com)
+[peachytools.com](https://peachytools.com) ![Peachy Tools Logo](http://peachytools.com/favicon.png "Peachy Tools Logo")
 ===
 
 ## Every little tool you need, in one place.
@@ -14,10 +14,10 @@ A well-documented design framework for Peachy Tools is on its way. Developers wi
 ## Implementation
 
 Peachy Tools currently employs the following technologies:
-- React
-- SASS
-- npm
-- webpack
+- [React](https://facebook.github.io/react/)
+- [SASS](http://sass-lang.com/)
+- [npm](https://www.npmjs.com/)
+- [webpack](https://webpack.js.org/)
 
 
 ## Be simple.
