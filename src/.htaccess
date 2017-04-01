@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteRule ^about index.html
+RewriteRule ^contribute index.html
+RewriteRule ^purpose index.html
+
+# Tools
+RewriteRule ^random-number-generator index.html
+RewriteRule ^charades-generator index.html
+RewriteRule ^charades-generator index.html
+RewriteRule ^pearson-correlation-coefficient-calculator index.html
+
+ErrorDocument 404 /index.html
