@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://peachytools.com/sitemap.xml
