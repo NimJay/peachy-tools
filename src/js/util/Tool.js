@@ -23,7 +23,7 @@ const TOOLS = [
         description: 'Generate words and phrases for Charades word game.',
         keywords: [
             'charades', 'generator', 'generate', 'random', 'group',
-            'party', 'game'
+            'party', 'game', 'word'
         ]
     },
     {
@@ -50,7 +50,7 @@ function searchTools(searchString) {
     // Empty string.
     if (/^\s*$/.test(searchString)) return [];
 
-    let ss = searchString.split(/\s+/); // Split in whitespace.
+    let ss = searchString.trim().split(/\s+/); // Split in whitespace.
 
     let computeScore = (tool) => {
         let score = 1 - (ss.length * 0.5);
@@ -67,7 +67,7 @@ function searchTools(searchString) {
     return TOOLS
         .filter(t => t.disabled !== true) // Ignore disabled.
         .filter(t => computeScore(t) >= 1) // Only keep matches.
-        .sort(t => -computeScore); // Sort.
+        .sort((a, b) => computeScore(a) < computeScore(b)); // Sort.
 }
 
 
