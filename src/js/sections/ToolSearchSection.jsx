@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { searchTools } from '../util/Tool.js' // Nim: TODO: Use import Promise.
+import { log } from '../util/global.js'
 
 
 /**
@@ -17,6 +18,14 @@ class ToolSearchSection extends React.Component {
     }
 
 
+    // Initial search.
+    componentDidMount() {
+        this.setState({
+            toolResults: searchTools(this.state.searchString)
+        });
+    }
+
+
     // State setters.
     onSearch(e) {
         let searchString = e.target.value,
@@ -24,7 +33,6 @@ class ToolSearchSection extends React.Component {
         this.setState({ searchString, toolResults });
     }
     onToolSelect() {
-
         // Scroll to the very top.
         document.body.scrollTop = document.documentElement.scrollTop = 0;
     }

@@ -48,7 +48,8 @@ const TOOLS = [
 function searchTools(searchString) {
 
     // Empty string.
-    if (/^\s*$/.test(searchString)) return [];
+    if (/^\s*$/.test(searchString))
+        return TOOLS.filter(t => t.disabled !== true);
 
     let ss = searchString.trim().split(/\s+/); // Split in whitespace.
 
