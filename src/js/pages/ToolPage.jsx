@@ -33,9 +33,6 @@ class ToolPage extends React.Component {
         let { lastImportId } = this.state,
             promise = null;
 
-        // New import.
-        lastImportId++;
-        this.setState({ importingTool: true, 'lastImportId': lastImportId });
 
         // The import Promise.
         if (tool == 'random-number-generator') {promise = import('../tools/random-number-generator/ToolComponent.jsx')}
@@ -45,6 +42,10 @@ class ToolPage extends React.Component {
 
         // Nim: Yes, wasting a Promise ID. But clean code.
         else return this.setState({ toolImported: false });
+
+        // New import.
+        lastImportId++;
+        this.setState({ importingTool: true, 'lastImportId': lastImportId });
 
         promise
             .then(this.onImportToolSuccess.bind(this, lastImportId)) // Success.
@@ -57,7 +58,9 @@ class ToolPage extends React.Component {
         let { lastImportId } = this.state;
         if (lastImportId != importId) return null;
 
-        this.setState({ toolImported:true, 'toolComponent': (<module.default />) });
+        this.setState({
+            toolImported: true, importingTool: false,
+            'toolComponent': (<module.default />) });
     }
     onImportToolError(importId, module) {
         log("Error for import Promise with ID: " + importId);
@@ -79,14 +82,15 @@ class ToolPage extends React.Component {
 
     render() {
 
-        let { toolImported, toolComponent } = this.state;
+        let { importingTool, toolImported, toolComponent } = this.state,
+            className = 'page toolpage' +
+                (importingTool ? ' loading': '');
 
         return (
-            <div className="page">
+            <div className={className}>
 
                 {toolImported ? toolComponent : null}
-                {toolImported === false ? <NotFoundDiv /> : null}
-                {toolImported === null ? <LoadingDiv /> : null}
+                {toolImported === false ? <NotFoundSection /> : null}
 
                 <ToolSearchSection />
                 <OpenSourceSection />
@@ -96,7 +100,16 @@ class ToolPage extends React.Component {
     }
 }
 
-const LoadingDiv = () => (<div>Loading...</div>);
-const NotFoundDiv = () => (<div>Page not found. :(</div>);
+
+// <NotFoundSection>
+const NotFoundSection = () => (
+    <section className='notfound'>
+        <div className='container'>
+            <h1>Page Not Found</h1>
+            <p>The requested page or tool could not be found.</p>
+        </div>
+    </section>
+);
+
 
 export default ToolPage;

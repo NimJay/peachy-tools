@@ -76,7 +76,6 @@ section {
     max-width: 750px;
 }
 
-
 // <FooterSection>
 section.footersection {
     border-top: solid 1px rgba(0, 0, 0, 0.1);
@@ -94,9 +93,19 @@ section.footersection {
     }
 }
 
+// <ToolPage>
+.page.toolpage {
+    &.loading {cursor: progress;}
+}
+
+// <NotFoundSection>
+section.notfound {
+    background-color: $color-salmon;
+    color: $color-white;
+}
+
 // <ToolComponent> (or <ToolSection>)
 section.toolsection {
-    text-align: right;
     padding-bottom: 96px;
 }
 
