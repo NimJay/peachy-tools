@@ -27,9 +27,9 @@ class ToolComponent extends React.Component {
     render() {
         let { charade } = this.state;
         return (
-            <section>
+            <section className="toolsection">
                 <div className="container">
-                    <h1>{charade}</h1>
+                    <h1 style={{'minHeight': '2.5em'}}>{charade}</h1>
                     <button
                         type="button"
                         onClick={this.onGenerate.bind(this)}>GENERATE</button>

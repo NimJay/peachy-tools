@@ -88,8 +88,6 @@ class ToolPage extends React.Component {
                 {toolImported === false ? <NotFoundDiv /> : null}
                 {toolImported === null ? <LoadingDiv /> : null}
 
-                {/* Padding */ } <div style={{ paddingTop: '150px'}}></div>
-
                 <ToolSearchSection />
                 <OpenSourceSection />
                 <FreeSection />

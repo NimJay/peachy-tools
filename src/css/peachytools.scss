@@ -76,6 +76,8 @@ section {
     max-width: 750px;
 }
 
+
+// <FooterSection>
 section.footersection {
     border-top: solid 1px rgba(0, 0, 0, 0.1);
     font-size: 16px;
@@ -84,11 +86,18 @@ section.footersection {
     div.container > a {margin-right: 16px;}
 }
 
+// <ContributePage>
 .contributepage {
     section:first-child {
         color: $color-white;
         background-color: $color-salmon;
     }
+}
+
+// <ToolComponent> (or <ToolSection>)
+section.toolsection {
+    text-align: right;
+    padding-bottom: 96px;
 }
 
 
