@@ -1,13 +1,5 @@
 import React from 'react'
-
-
-// A list of charades.
-const CHARADES = [
-    "Inception", "Ski Lift", "Lion King", "Message In A Bottle",
-    "Cat Food", "Ice Age", "Sloth", "Pikachu", "Time Machine",
-    "Harry Potter", "Computer Bug", "Google Search", "Graduation",
-    "Gold Digger", "Broom"
-];
+import { getNextCharade } from './Charade.js'
 
 
 class ToolComponent extends React.Component {
@@ -15,13 +7,12 @@ class ToolComponent extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            charade: CHARADES[Math.floor(Math.random() * CHARADES.length)]
+            charade: getNextCharade()
         };
     }
 
     onGenerate() {
-        this.setState({
-            charade: CHARADES[Math.floor(Math.random() * CHARADES.length)] });
+        this.setState({ charade: getNextCharade() });
     }
 
     render() {
