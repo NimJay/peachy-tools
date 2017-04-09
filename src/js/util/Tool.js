@@ -51,14 +51,16 @@ function searchTools(searchString) {
     if (/^\s*$/.test(searchString))
         return TOOLS.filter(t => t.disabled !== true);
 
-    let ss = searchString.trim().split(/\s+/); // Split in whitespace.
+    let ss = searchString.toLowerCase().trim()
+        .split(/\s+/); // Split in whitespace.
 
     let computeScore = (tool) => {
-        let score = 1 - (ss.length * 0.5);
+        let score = 2 - (ss.length * 1);
         for (var i in ss) {
             let s = ss[i]; // Current word of searchString.
             score += tool.url.includes(s) * 3;
-            score += tool.description.includes(s);
+            score += tool.name.toLowerCase().includes(s);
+            score += tool.description.toLowerCase().includes(s);
             score += tool.keywords.filter(k => k.includes(s)).length * 0.5;
         }
         console.log(tool.url + " scored " + score);
@@ -67,7 +69,7 @@ function searchTools(searchString) {
 
     return TOOLS
         .filter(t => t.disabled !== true) // Ignore disabled.
-        .filter(t => computeScore(t) >= 1) // Only keep matches.
+        .filter(t => computeScore(t) >= 2) // Only keep matches.
         .sort((a, b) => computeScore(a) < computeScore(b)); // Sort.
 }
 
