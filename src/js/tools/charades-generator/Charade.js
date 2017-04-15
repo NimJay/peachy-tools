@@ -19,11 +19,17 @@ const CHARADES = [
 {charade: "Ice Age"},
 
 // Shows
+{charade: "Breaking Bad"},
 {charade: "How I Met Your Mother"},
+{charade: "Game of Thrones"},
 
 // Music
 {charade: "Cheap Thrills"},
 {charade: "I Took A Pill In Ibiza"},
+
+// Games
+{charade: "Mario Kart"},
+{charade: "Call of Duty"},
 
 // People
 {charade: "Albert Einstein"},
