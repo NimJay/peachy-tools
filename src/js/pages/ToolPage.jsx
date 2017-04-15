@@ -37,7 +37,7 @@ class ToolPage extends React.Component {
         // The import Promise.
         if (tool == 'random-number-generator') {promise = import('../tools/random-number-generator/ToolComponent.jsx')}
         else if (tool == 'charades-generator') {promise = import('../tools/charades-generator/ToolComponent.jsx')}
-        else if (tool == 'superhero-name-generator') {promise = import('../tools/superhero-name-generator/ToolComponent.jsx')}
+        // else if (tool == 'superhero-name-generator') {promise = import('../tools/superhero-name-generator/ToolComponent.jsx')}
         // else if (tool == 'pearson-correlation-coefficient-calculator') {promise = import('../tools/pearson-correlation-coefficient-calculator/ToolComponent.jsx')}
 
         // Nim: Yes, wasting a Promise ID. But clean code.
@@ -90,7 +90,7 @@ class ToolPage extends React.Component {
             <div className={className}>
 
                 {toolImported ? toolComponent : null}
-                {toolImported === false ? <NotFoundSection /> : null}
+                {toolComponent && toolImported === false ? <NotFoundSection /> : null}
 
                 <ToolSearchSection />
                 <OpenSourceSection />
