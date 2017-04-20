@@ -35,8 +35,9 @@ class ToolPage extends React.Component {
 
 
         // The import Promise.
-        if (tool == 'random-number-generator') {promise = import('../tools/random-number-generator/ToolComponent.jsx')}
+        if (tool == 'character-counter') {promise = import('../tools/character-counter/ToolComponent.jsx')}
         else if (tool == 'charades-generator') {promise = import('../tools/charades-generator/ToolComponent.jsx')}
+        else if (tool == 'random-number-generator') {promise = import('../tools/random-number-generator/ToolComponent.jsx')}
         // else if (tool == 'superhero-name-generator') {promise = import('../tools/superhero-name-generator/ToolComponent.jsx')}
         // else if (tool == 'pearson-correlation-coefficient-calculator') {promise = import('../tools/pearson-correlation-coefficient-calculator/ToolComponent.jsx')}
 

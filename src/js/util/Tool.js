@@ -10,11 +10,12 @@
  */
 const TOOLS = [
     {
-        url: 'random-number-generator',
-        name: 'Random Number Generator',
-        description: 'Generate random numbers.',
+        url: 'character-counter',
+        name: 'Character Counter',
+        description: 'Count the number of characters in some text.',
         keywords: [
-            'random', 'number', 'generator', 'generate', 'integer'
+            'text', 'letters', 'characters', 'counter', 'tally', 'total',
+            'words', 'lines', 'length'
         ]
     },
     {
@@ -37,6 +38,14 @@ const TOOLS = [
             'product', 'moment', 'ppmcc'
         ],
         disabled: true
+    },
+    {
+        url: 'random-number-generator',
+        name: 'Random Number Generator',
+        description: 'Generate random numbers.',
+        keywords: [
+            'random', 'number', 'generator', 'generate', 'integer'
+        ]
     }
 ];
 
