@@ -8,7 +8,11 @@ const CHARADES = [
 {charade: "Titanic"},
 
 // Creatures
+{charade: "Alligator"},
+{charade: "Bald Eagle"},
 {charade: "Blue Whale"},
+{charade: "Elephant"},
+{charade: "Giraffe"},
 {charade: "Pikachu"},
 {charade: "Sea Monster"},
 {charade: "Sloth"},
@@ -26,6 +30,10 @@ const CHARADES = [
 // Music
 {charade: "Cheap Thrills"},
 {charade: "I Took A Pill In Ibiza"},
+
+// Stories
+{charade: "Cinderella"},
+{charade: "Snow White"},
 
 // Games
 {charade: "Mario Kart"},
