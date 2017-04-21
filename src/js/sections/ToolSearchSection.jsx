@@ -55,9 +55,9 @@ class ToolSearchSection extends React.Component {
                         type="text"
                         onChange={this.onSearch.bind(this)}
                         placeholder="Search for a Tool" />
-                    <div className="tools">
+                    <nav className="tools">
                         {toolLinks}
-                    </div>
+                    </nav>
                 </div>
             </section>
         );
