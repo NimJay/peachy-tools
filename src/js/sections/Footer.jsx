@@ -18,8 +18,8 @@ const SLOGANS = [
 ];
 
 
-const FooterSection = () => (
-    <section className='footersection'>
+const Footer = () => (
+    <footer>
         <div className='container'>
             <Link to='/'>
                 <img src='/favicon.png' />
@@ -28,8 +28,8 @@ const FooterSection = () => (
                 {SLOGANS[Math.floor(Math.random() * SLOGANS.length)]}
             </p>
         </div>
-    </section>
+    </footer>
 );
 
 
-export default FooterSection;
+export default Footer;

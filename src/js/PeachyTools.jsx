@@ -14,7 +14,7 @@ import ContributePage from './pages/ContributePage.jsx'
 import PurposePage from './pages/PurposePage.jsx'
 import ToolPage from './pages/ToolPage.jsx'
 
-import FooterSection from './sections/FooterSection.jsx';
+import Footer from './sections/Footer.jsx';
 
 
 // <PeachyTools>
@@ -28,7 +28,7 @@ const PeachyTools = () => (
                 <Route path="/purpose" component={PurposePage} />
                 <Route path="/:tool" component={ToolPage} />
             </Switch>
-            <FooterSection />
+            <Footer />
         </div>
     </Router>
 );
