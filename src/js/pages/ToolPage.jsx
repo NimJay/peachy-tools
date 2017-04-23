@@ -6,6 +6,7 @@ import FreeSection from '../sections/FreeSection.jsx';
 import OpenSourceSection from '../sections/OpenSourceSection.jsx';
 import ToolSearchSection from '../sections/ToolSearchSection.jsx';
 import { log } from '../util/global.js';
+import { getToolByUrl } from '../util/Tool.js';
 
 
 class ToolPage extends React.Component {
@@ -28,25 +29,28 @@ class ToolPage extends React.Component {
     /**
      * Import the specified given tool.
      */
-    importTool(tool) {
+    importTool(toolUrl) {
 
         let { lastImportId } = this.state,
-            promise = null;
+            promise = null,
+            tool = getToolByUrl(toolUrl);
 
+        // Tool/Page not found.
+        if (!tool)
+            return this.setState({ toolImported: false });
 
         // The import Promise.
-        if (tool == 'character-counter') {promise = import('../tools/character-counter/ToolComponent.jsx')}
-        else if (tool == 'charades-generator') {promise = import('../tools/charades-generator/ToolComponent.jsx')}
-        else if (tool == 'random-number-generator') {promise = import('../tools/random-number-generator/ToolComponent.jsx')}
+        if (toolUrl == 'character-counter') promise = import('../tools/character-counter/ToolComponent.jsx');
+        else if (toolUrl == 'charades-generator') promise = import('../tools/charades-generator/ToolComponent.jsx');
+        else if (toolUrl == 'random-number-generator') promise = import('../tools/random-number-generator/ToolComponent.jsx');
         // else if (tool == 'superhero-name-generator') {promise = import('../tools/superhero-name-generator/ToolComponent.jsx')}
         // else if (tool == 'pearson-correlation-coefficient-calculator') {promise = import('../tools/pearson-correlation-coefficient-calculator/ToolComponent.jsx')}
 
-        // Nim: Yes, wasting a Promise ID. But clean code.
-        else return this.setState({ toolImported: false });
-
         // New import.
         lastImportId++;
-        this.setState({ importingTool: true, 'lastImportId': lastImportId });
+        this.setState({
+            'importingTool': true, 'lastImportId': lastImportId, 'tool': tool
+        });
 
         promise
             .then(this.onImportToolSuccess.bind(this, lastImportId)) // Success.
@@ -83,7 +87,7 @@ class ToolPage extends React.Component {
 
     render() {
 
-        let { importingTool, toolImported, toolComponent } = this.state,
+        let { tool, importingTool, toolImported, toolComponent } = this.state,
             className = 'page toolpage' +
                 (importingTool ? ' loading': '');
 
@@ -92,6 +96,7 @@ class ToolPage extends React.Component {
 
                 {toolImported ? toolComponent : null}
                 {toolComponent && toolImported === false ? <NotFoundSection /> : null}
+                {toolImported ? <Header tool={tool} /> : null}
 
                 <ToolSearchSection />
                 <OpenSourceSection />
@@ -100,6 +105,17 @@ class ToolPage extends React.Component {
         )
     }
 }
+
+
+// <Header>
+const Header = ({ tool }) => (
+    <header>
+        <div className='container'>
+            <h1>{tool.name}</h1>
+            <p>{tool.description}</p>
+        </div>
+    </header>
+);
 
 
 // <NotFoundSection>

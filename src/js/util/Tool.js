@@ -21,7 +21,7 @@ const TOOLS = [
     {
         url: 'charades-generator',
         name: 'Charades Generator',
-        description: 'Generate words and phrases for Charades word game.',
+        description: 'Generate words and phrases for Charades party game.',
         keywords: [
             'charades', 'generator', 'generate', 'random', 'group',
             'party', 'game', 'word'
@@ -48,6 +48,16 @@ const TOOLS = [
         ]
     }
 ];
+
+
+/**
+ * Return the Tool with the given URL, or undefined on error.
+ * Note: Each Tool has a unique URL.
+ */
+function getToolByUrl(url) {
+    console.log('Looking for: ' + url);
+    return TOOLS.find(t => t.url == url);
+}
 
 
 /**
@@ -83,4 +93,4 @@ function searchTools(searchString) {
 }
 
 
-export { searchTools, TOOLS };
+export { getToolByUrl, searchTools, TOOLS };
