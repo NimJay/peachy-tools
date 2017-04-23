@@ -11,23 +11,24 @@ class ToolComponent extends React.Component {
         };
     }
 
-    onGenerate() {
+    onSubmit(e) {
+        e.preventDefault(); // Prevent page refresh.
         this.setState({ charade: getNextCharade() });
     }
 
     render() {
         let { charade } = this.state;
         return (
-            <section className="toolsection">
+            <main>
                 <div className="container">
-                    <h1 style={{'minHeight': '2.5em'}}>{charade}</h1>
-                    <div style={{'textAlign': 'right'}}>
-                        <button
-                            onClick={this.onGenerate.bind(this)}
-                            type="button">GENERATE</button>
-                    </div>
+                    <form onSubmit={this.onSubmit.bind(this)}>
+                        <output style={{'minHeight': '2.5em'}}>{charade}</output>
+                        <div style={{'textAlign': 'right'}}>
+                            <button type="submit">GENERATE</button>
+                        </div>
+                    </form>
                 </div>
-            </section>
+            </main>
         );
     }
 }
