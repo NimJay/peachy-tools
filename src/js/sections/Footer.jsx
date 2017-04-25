@@ -22,7 +22,7 @@ const Footer = () => (
     <footer>
         <div className='container'>
             <Link to='/'>
-                <img src='/favicon.png' />
+                <img src='/favicon.png' alt='Peachy Tools Logo' />
             </Link>
             <p>
                 {SLOGANS[Math.floor(Math.random() * SLOGANS.length)]}
