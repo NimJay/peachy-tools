@@ -20,4 +20,19 @@ Peachy Tools currently employs the following technologies:
 - [webpack](https://webpack.js.org/)
 
 
+## Run On Your Machine
+
+To run Peachy Tools on your machine:
+1. Install [Node.js](https://nodejs.org/) (and npm).
+2. Enter the src/ directory.
+3. `npm install` to install Node.js dependencies.
+4. `npm run webpack` to compile PeachyTools.jsx into /src/js/bundle.
+5. `npm run node-sass` to compile the SASS in /src/scss/ to peachytools.css.
+6. `node main.js` to serves Peachy Tools.
+
+Use the following command during development from **/src/**:
+```
+npm run webpack & npm node-sass & node main.js
+```
+
 ## Be simple.
