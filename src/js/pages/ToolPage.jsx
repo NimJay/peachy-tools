@@ -37,7 +37,7 @@ class ToolPage extends React.Component {
 
         // Tool/Page not found.
         if (!tool)
-            return this.setState({ toolImported: false });
+            return this.setState({ tool: null, toolImported: false });
 
         // The import Promise.
         if (toolUrl == 'character-counter') promise = import('../tools/character-counter/ToolComponent.jsx');
@@ -95,7 +95,7 @@ class ToolPage extends React.Component {
             <div className={className}>
 
                 {toolImported ? toolComponent : null}
-                {toolComponent && toolImported === false ? <NotFoundSection /> : null}
+                {tool === null ? <NotFoundSection /> : null}
                 {toolImported ? <Header tool={tool} /> : null}
 
                 <ToolSearchSection />
