@@ -18,12 +18,16 @@ class ToolPage extends React.Component {
             toolComponent: null,
             importingTool: false, // true iff a Tool is currently being imported.
             toolImported: false, // true iff the Tool is successfully imported.
-            lastImportId: -1 // Each import Promise has an ID.
+            lastImportId: -1, // Each import Promise has an ID.
+            initialTitle: document.title // Save the title of the document.
         };
     }
 
     componentWillMount() {
         this.importTool(this.props.match.params.tool);
+    }
+    componentWillUnmount() {
+        document.title = this.state.initialTitle; // Revert title.
     }
 
     /**
@@ -60,9 +64,9 @@ class ToolPage extends React.Component {
         log("Success for import Promise with ID: " + importId);
 
         // We only care about the most recent import Promise.
-        let { lastImportId } = this.state;
+        let { lastImportId, tool } = this.state;
         if (lastImportId != importId) return null;
-
+        document.title = tool.name + " – Peachy Tools";
         this.setState({
             toolImported: true, importingTool: false,
             'toolComponent': (<module.default />) });
