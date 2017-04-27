@@ -7,7 +7,7 @@ const OpenSourceSection = () => (
         <div className='container'>
             <h2>Peachy Tools is <b>Open-source</b></h2>
             <p>
-                "Open-source" means anyone can view, edit, fix, and/or add to Peachy Tool's code.
+                "Open-source" means anyone can view, edit, fix, and/or add to Peachy Tools' code.
             </p>
             <Link to='/contribute' className='button'>CONTRIBUTE</Link>
         </div>
