@@ -7,10 +7,16 @@ class ContributePage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            initialTitle: document.title // Save the title of the document.
         };
     }
 
+    componentWillMount() {
+        document.title = "Contribute – Peachy Tools";
+    }
+    componentWillUnmount() {
+        document.title = this.state.initialTitle; // Revert title.
+    }
 
     render() {
 
