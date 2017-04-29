@@ -32,7 +32,7 @@ To run Peachy Tools on your machine:
 
 Use the following command during development from **/src/**:
 ```
-npm run webpack & npm node-sass & node main.js
+npm run webpack & npm run node-sass & node main.js
 ```
 
 ## Be simple.
