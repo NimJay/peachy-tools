@@ -1,4 +1,5 @@
 import React from 'react'
+import Output from '../../components/Output.jsx'
 
 
 class ToolComponent extends React.Component {
@@ -6,22 +7,25 @@ class ToolComponent extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            number: Math.random()
+            number: Math.random(),
+            iteration: 0
         };
     }
 
     onSubmit(e) {
         e.preventDefault(); // Prevent page refresh.
-        this.setState({ number: Math.random() });
+        this.setState(
+            { number: Math.random(), iteration: this.state.iteration + 1 });
     }
 
     render() {
-        let { number } = this.state;
+        let { number, iteration } = this.state;
         return (
             <main>
                 <div className="container">
                     <form onSubmit={this.onSubmit.bind(this)}>
-                        <output style={{'minHeight': '2.5em'}}>{number}</output>
+                        <Output style={{'minHeight': '2.5em'}}
+                            iteration={iteration}>{number}</Output>
                         <div style={{'textAlign': 'right'}}>
                             <button type="submit">GENERATE</button>
                         </div>
@@ -31,5 +35,6 @@ class ToolComponent extends React.Component {
         );
     }
 }
+
 
 export default ToolComponent;

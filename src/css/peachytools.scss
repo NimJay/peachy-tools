@@ -4,6 +4,10 @@ $color-black: rgb(50, 50, 50);
 $color-salmon: #f15656;
 $color-green: #95dc5f;
 
+
+@import 'mixins';
+
+
 body {
     margin: 0px;
     line-height: 1.5em
@@ -120,7 +124,10 @@ main {
         display: block;
         font-size: 48px;
         line-height: 1.2em;
+        opacity: 1;
+        @include transition(opacity 150ms ease-out);
     }
+    output.hidden {opacity: 0;}
 }
 
 // Mobile
