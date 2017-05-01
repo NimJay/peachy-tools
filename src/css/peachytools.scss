@@ -16,6 +16,7 @@ body {
 body, input, textarea, button {
     font-family: 'Roboto', Sans Serif;
     font-size: 20px;
+    line-height: 1.5em;
     color: $color-black;
 }
 
@@ -24,6 +25,8 @@ body, input, textarea, button {
     box-sizing: border-box;
     word-wrap: break-word;
 }
+
+span {display: inline-block;}
 
 a {text-decoration: none;color: $color-green;}
 
@@ -48,6 +51,12 @@ input {
     background: none;
     border: none;
     outline: none;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    height: 5.5em;
 }
 
 h1, h2, h3 {font-weight: normal;}
@@ -140,3 +149,4 @@ main {
 
 
 @import 'toolsearchsection';
+@import 'checkbox';
