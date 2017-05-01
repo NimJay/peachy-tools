@@ -57,7 +57,11 @@ textarea {
     width: 100%;
     padding: 8px;
     height: 5.5em;
+    outline: none;
+    border: none;
+    border-left: solid 2px rgba(0, 0, 0, 0.1);
 }
+textarea:focus {border-left: solid 2px $color-green;}
 
 h1, h2, h3 {font-weight: normal;}
 
