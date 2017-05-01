@@ -1,0 +1,35 @@
+label.checkbox {
+
+	display: block;
+	font-size: 20px;
+	width: 100%;
+	cursor: pointer;
+	text-align: right;
+
+    span {vertical-align: middle;}
+    > span:nth-child(1) {width: 90%;padding-right: 8px;}
+    > input {display: none;}
+    > span:nth-child(3) {width: 10%;}
+    > span:nth-child(3) span {
+    	height: 26px;
+    	width: 26px;
+    	border-radius: 3px;
+    	border: 2px solid rgb(50, 50, 50);
+    	position: relative;
+    	transition: border 0.2s ease-out, background-color 0.2s ease-out;
+    }
+
+    > input:checked + span > span {border: 2px solid #95dc5f;background-color: #95dc5f;}
+    > input:checked + span > span:before {
+        font-size: 29px;
+        content: '\2714';
+        position: absolute;
+        top: -5px;
+        left: 0;
+        color: white;
+    }
+}
+
+
+// TODO: Reconsider placement.
+div.checkboxrow {padding: 10px 8px;}
