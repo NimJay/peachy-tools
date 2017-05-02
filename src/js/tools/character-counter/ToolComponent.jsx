@@ -45,7 +45,7 @@ class ToolComponent extends React.Component {
                             {totalCharacters} characters
                         </Output>
                         <Checkbox value={ignoreWhitespace}
-                            label="Ignore whitespace"
+                            label="Ignore whitespace (spaces, tabs, etc.)"
                             onChange={this.setIgnoreWhitespace.bind(this)} />
                     </form>
                 </div>
