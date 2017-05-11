@@ -20,7 +20,7 @@
 <?php
 		// <meta> tags that rely on the requested URI.
 		include_once 'php/MetaTags.php';
-		echo MetaTags::get() . '\n';
+		echo MetaTags::get() . "\n";
 ?>
 
 		<!-- I M P O R T -->
