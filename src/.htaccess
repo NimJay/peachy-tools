@@ -1,12 +1,12 @@
 RewriteEngine On
-RewriteRule ^about index.html
-RewriteRule ^contribute index.html
-RewriteRule ^purpose index.html
+RewriteRule ^about$ index.php
+RewriteRule ^contribute$ index.php
+RewriteRule ^purpose$ index.php
 
 # Tools
-RewriteRule ^character-counter index.html
-RewriteRule ^charades-generator index.html
-RewriteRule ^random-number-generator index.html
-RewriteRule ^pearson-correlation-coefficient-calculator index.html
+RewriteRule ^character-counter$ index.php
+RewriteRule ^charades-generator$ index.php
+RewriteRule ^random-number-generator$ index.php
+RewriteRule ^pearson-correlation-coefficient-calculator$ index.php
 
-ErrorDocument 404 /index.html
+ErrorDocument 404 /index.php
