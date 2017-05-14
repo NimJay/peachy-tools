@@ -6,19 +6,27 @@ const CHARADES = [
 // Books
 {charade: "Alice in Wonderland"},
 {charade: "A Series of Unfortunate Events"},
+{charade: "Berenstain Bears"},
+{charade: "Bridget Jones"},
+{charade: "Captain Underpants"},
 {charade: "Charlotte’s Web"},
 {charade: "Charlie and the Chocolate Factory"},
 {charade: "Chicken Soup for the Soul"},
+{charade: "Clifford the Big Red Dog"},
+{charade: "Curious George"},
 {charade: "Diary of a Wimpy Kid"},
 {charade: "Fifty Shades of Grey", ratedR: "true"},
 {charade: "Fight Club"},
 {charade: "Gone with the Wind"},
 {charade: "Goosebumps"},
 {charade: "Harry Potter"},
+{charade: "Noddy"},
+{charade: "Tarzan"},
 {charade: "The Da Vinci Code"},
 {charade: "The Great Gatsby"},
 {charade: "The Hobbit"},
 {charade: "The Hunger Games"},
+{charade: "The Jungle Book"},
 {charade: "The Kite Runner"},
 {charade: "The Lord of the Rings"},
 {charade: "To Kill a Mockingbird", ratedR: "true"},
@@ -55,33 +63,70 @@ const CHARADES = [
 {charade: "Wild Boar"},
 
 // Movies
+{charade: "Ant-Man"},
+{charade: "American Sniper"},
+{charade: "Big Hero 6"},
+{charade: "Captian America"},
+{charade: "Doctor Strange"},
+{charade: "Despicable Me"},
 {charade: "E.T. the Extra-Terrestrial"},
+{charade: "Fast and Furious"},
 {charade: "Finding Dory"},
 {charade: "Finding Nemo"},
 {charade: "Forrest Gump"},
+{charade: "Frozen"},
+{charade: "Furious 7"},
+{charade: "Gone Girl"},
+{charade: "Ghostbusters"},
+{charade: "Guardians of the Galaxy"},
+{charade: "Hotel Transylvania"},
 {charade: "How to Train Your Dragon"},
 {charade: "Ice Age"},
 {charade: "Inception"},
+{charade: "Inside Out"},
 {charade: "Interstellar"},
+{charade: "Jurassic Park"},
+{charade: "Jurassic World"},
+{charade: "Kung Fu Panda"},
+{charade: "Man of Steel"},
+{charade: "Monsters University"},
 {charade: "Monsters, Inc."},
 {charade: "My Girl"},
+{charade: "Minions"},
+{charade: "Now You See Me"},
+{charade: "Planet of the Apes"},
+{charade: "Pitch Perfect"},
 {charade: "Pulp Fiction", ratedR: true},
+{charade: "Ride Along"},
 {charade: "Rocky"},
+{charade: "Scarface", ratedR: true},
 {charade: "Shrek"},
 {charade: "Star Wars"},
+{charade: "Suicide Squad"},
+{charade: "The Avengers"},
+{charade: "The Conjuring", ratedR: true},
+{charade: "The Croods"},
 {charade: "The Dark Knight"},
 {charade: "The Dark Knight Rises"},
 {charade: "The Godfather", ratedR: true},
+{charade: "The Good Dinosaur"},
+{charade: "The Hangover", ratedR: true},
 {charade: "The Incredibles"},
+{charade: "The Lego Movie"},
 {charade: "The Lion King"},
+{charade: "The Martian"},
 {charade: "The Matrix"},
+{charade: "The Revenant"},
 {charade: "The Sound of Music"},
 {charade: "The Wizard of Oz"},
-{charade: "Scarface", ratedR: true},
+{charade: "Transformers"},
 {charade: "Titanic"},
 {charade: "Toy Story 3"},
 {charade: "Up"},
 {charade: "WALL-E"},
+{charade: "World War Z"},
+{charade: "Zootopia"},
+
 
 // Shows
 {charade: "Arthur"},
@@ -99,6 +144,7 @@ const CHARADES = [
 {charade: "The Big Bang Theory"},
 {charade: "13 Reasons Why"},
 
+
 // Music
 {charade: "Cheap Thrills"},
 {charade: "Hotline Bling"},
@@ -114,6 +160,7 @@ const CHARADES = [
 {charade: "Work"},
 {charade: "Wrecking Ball"},
 
+
 // Stories
 {charade: "Aladdin"},
 {charade: "Beauty and the Beast"},
@@ -126,6 +173,7 @@ const CHARADES = [
 {charade: "The Little Mermaid"},
 {charade: "The Ugly Duckling"},
 
+
 // Places Around The World
 {charade: "Buckingham Palace"},
 {charade: "Burj Khalifa"},
@@ -133,6 +181,7 @@ const CHARADES = [
 {charade: "Disney Land"},
 {charade: "Eiffel Tower"},
 {charade: "Empire State Building"},
+{charade: "James Bond"},
 {charade: "Great Wall of China"},
 {charade: "London Eye"},
 {charade: "Machu Picchu"},
@@ -147,6 +196,7 @@ const CHARADES = [
 {charade: "Mario Kart"},
 {charade: "Mortal Kombat"},
 {charade: "Pokemon GO"},
+
 
 // People
 {charade: "Adele"},
@@ -164,11 +214,22 @@ const CHARADES = [
 {charade: "Oprah Winfrey"},
 {charade: "William Shakespeare"},
 
+
+// Comic Characters
+{charade: "Batman"},
+{charade: "Deadpool"},
+{charade: "Iron Man"},
+{charade: "Superman"},
+{charade: "Spider-Man"},
+{charade: "Teenage Mutant Ninja Turtles"},
+
+
 // Other
 {charade: "Broom"},
 {charade: "Cat Food"},
 {charade: "Gold Digger"},
 {charade: "Google Search"},
+{charade: "Goosebumps"},
 {charade: "Graduation"},
 {charade: "Message In A Bottle"},
 {charade: "Nail Polish Remover"},
