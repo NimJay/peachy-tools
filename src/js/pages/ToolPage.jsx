@@ -66,7 +66,7 @@ class ToolPage extends React.Component {
         // We only care about the most recent import Promise.
         let { lastImportId, tool } = this.state;
         if (lastImportId != importId) return null;
-        document.title = tool.name + " – Peachy Tools";
+        document.title = tool.name + " - Peachy Tools";
         this.setState({
             toolImported: true, importingTool: false,
             'toolComponent': (<module.default />) });

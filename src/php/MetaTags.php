@@ -19,7 +19,7 @@ class MetaTags {
         $title = 'Peachy Tools';
         $description = 'Every little tool you need, in one place.';
         if ($tool) {
-            $title = $tool['name'] . ' – Peachy Tools';
+            $title = $tool['name'] . ' - Peachy Tools';
             $description = $tool['description'];
         }
 

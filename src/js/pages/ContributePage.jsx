@@ -12,7 +12,7 @@ class ContributePage extends React.Component {
     }
 
     componentWillMount() {
-        document.title = "Contribute – Peachy Tools";
+        document.title = "Contribute - Peachy Tools";
     }
     componentWillUnmount() {
         document.title = this.state.initialTitle; // Revert title.
