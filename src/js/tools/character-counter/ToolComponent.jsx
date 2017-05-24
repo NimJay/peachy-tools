@@ -40,7 +40,8 @@ class ToolComponent extends React.Component {
                     <form>
                         <textarea value={text}
                             onChange={this.setText.bind(this)}
-                            placeholder="Type your text here..."></textarea>
+                            placeholder="Type your text here..."
+                            autoFocus={true}></textarea>
                         <Output iteration={iteration}>
                             {totalCharacters} characters
                         </Output>

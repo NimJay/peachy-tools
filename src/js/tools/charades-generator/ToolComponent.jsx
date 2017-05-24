@@ -28,7 +28,8 @@ class ToolComponent extends React.Component {
                         <Output style={{'minHeight': '2.5em'}}
                             iteration={iteration}>{charade}</Output>
                         <div style={{'textAlign': 'right'}}>
-                            <button type="submit">GENERATE</button>
+                            <button type="submit"
+                                autoFocus={true}>GENERATE</button>
                         </div>
                     </form>
                 </div>
