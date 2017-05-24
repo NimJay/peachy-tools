@@ -26,6 +26,7 @@
 		<!-- I M P O R T -->
         <!-- Roboto Font --><link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
 		<!-- peachytools.css --><link type="text/css" rel="stylesheet" href="/css/peachytools.css" />
+		<!-- Babel Polyfill --><script src="/node_modules/babel-polyfill/dist/polyfill.min.js"></script>
 
 	</head>
 
