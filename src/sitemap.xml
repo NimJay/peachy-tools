@@ -11,6 +11,12 @@
    </url>
 
    <url>
+        <loc>https://peachytools.com/contribute</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.4</priority>
+   </url>
+
+   <url>
         <loc>https://peachytools.com/character-counter</loc>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
