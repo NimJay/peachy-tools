@@ -20,6 +20,12 @@ $TOOLS = [
     ],
 
     [
+        'url' => 'pictionary-generator',
+        'name' => 'Pictionary Generator',
+        'description' => 'Generate words and phrases for Pictionary word game.'
+    ],
+
+    [
         'url' => 'random-number-generator',
         'name' => 'Random Number Generator',
         'description' => 'Generate random numbers.'

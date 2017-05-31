@@ -15,6 +15,7 @@ app.use(express.static(__dirname));
 var sendIndex = (req, res) => {res.sendFile(__dirname + '/index.html');}
 app.get('/character-counter', sendIndex);
 app.get('/charades-generator', sendIndex);
+app.get('/pictionary-generator', sendIndex);
 app.get('/random-number-generator', sendIndex);
 
 // Everything else: index.html with 404.
