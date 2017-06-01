@@ -32,12 +32,57 @@ const PICTIONARIES = [
 {pictionary: "Whale"},
 {pictionary: "Wild Boar"},
 
-// Fruits and Vegetables
+// Food
 {pictionary: "Apple Tree"},
-{pictionary: "Orange"},
-{pictionary: "Pumpkin"},
+{pictionary: "Alphabet Soup"},
+{pictionary: "Banana"},
+{pictionary: "Blackberry"},
+{pictionary: "Carrot Cake"},
+{pictionary: "Cheesecake"},
+{pictionary: "Cherry Bush"},
+{pictionary: "Chocolate Chip Cookie"},
+{pictionary: "Coconut"},
+{pictionary: "Doughnut"},
+{pictionary: "French Fries"},
+{pictionary: "Egg Roll"},
+{pictionary: "Grapes"},
+{pictionary: "Hot dog"},
+{pictionary: "Ketchup"},
+{pictionary: "Kiwifruit"},
+{pictionary: "Lemon"},
+{pictionary: "Meatballs"},
+{pictionary: "Mustard"},
+{pictionary: "Nachos"},
+{pictionary: "Noodles"},
+{pictionary: "Nutella Sandwich"},
+{pictionary: "Onion Ring"},
+{pictionary: "Orange Juice"},
+{pictionary: "Pancake"},
+{pictionary: "Pasta"},
+{pictionary: "Peach"},
+{pictionary: "Peanut"},
+{pictionary: "Pear"},
+{pictionary: "Pineapple"},
+{pictionary: "Pumpkin Pie"},
+{pictionary: "Rice Pudding"},
+{pictionary: "Salad"},
+{pictionary: "Spaghetti"},
+{pictionary: "Starberry Milkshake"},
+{pictionary: "Waffle"},
+{pictionary: "Sundae"},
+{pictionary: "Taco"},
+{pictionary: "Watermelon"},
+{pictionary: "Yogurt"},
+
+// Clothing
+{pictionary: "Turtleneck"},
+
+// People
+{pictionary: "Steve Jobs"},
+{pictionary: "Kim Kardashian"},
 
 // Stationery
+{pictionary: "Calculator"},
 {pictionary: "Pen"},
 {pictionary: "Pencil"},
 {pictionary: "Eraser"},
@@ -86,6 +131,13 @@ const PICTIONARIES = [
 {pictionary: "Superman"},
 {pictionary: "Spider-Man"},
 {pictionary: "Teenage Mutant Ninja Turtles"},
+
+// Outdoors
+{pictionary: "Earthquake"},
+{pictionary: "Rainbow"},
+{pictionary: "Tornado"},
+{pictionary: "Tsunami"},
+
 
 // Other
 {pictionary: "Broom"},
