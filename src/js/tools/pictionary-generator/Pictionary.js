@@ -72,14 +72,34 @@ const PICTIONARIES = [
 {pictionary: "Sundae"},
 {pictionary: "Taco"},
 {pictionary: "Watermelon"},
-{pictionary: "Yogurt"},
 
 // Clothing
+{pictionary: "Ballet Slippers"},
+{pictionary: "Baseball Cap"},
+{pictionary: "Cowboy Hat"},
+{pictionary: "Dress Shirt"},
+{pictionary: "Gym Shorts"},
+{pictionary: "High Heels"},
+{pictionary: "Overalls"},
+{pictionary: "Rubber Boots"},
+{pictionary: "Running Shoes"},
+{pictionary: "Scarf"},
+{pictionary: "Socks"},
+{pictionary: "Spring Jacket"},
+{pictionary: "Stockings"},
+{pictionary: "Sundress"},
+{pictionary: "Sweater"},
+{pictionary: "Tie"},
 {pictionary: "Turtleneck"},
+{pictionary: "Tuxedo"},
+{pictionary: "Underwear"},
+{pictionary: "Watch"},
 
 // People
-{pictionary: "Steve Jobs"},
+{pictionary: "Donald Trump"},
 {pictionary: "Kim Kardashian"},
+{pictionary: "Steve Jobs"},
+{pictionary: "Albert Einstein"},
 
 // Stationery
 {pictionary: "Calculator"},
