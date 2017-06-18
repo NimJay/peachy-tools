@@ -95,6 +95,31 @@ const PICTIONARIES = [
 {pictionary: "Underwear"},
 {pictionary: "Watch"},
 
+// Home
+{pictionary: "Blender"},
+{pictionary: "Bookcase"},
+{pictionary: "Butter Knife"},
+{pictionary: "Carpet"},
+{pictionary: "Coffee Maker"},
+{pictionary: "Dish Washer"},
+{pictionary: "Jug"},
+{pictionary: "Juicer"},
+{pictionary: "Kettle"},
+{pictionary: "Vacuum Cleaner"},
+{pictionary: "Microwave"},
+{pictionary: "Oven"},
+{pictionary: "Pressure Cooker"},
+{pictionary: "Printer"},
+{pictionary: "Refrigerator"},
+{pictionary: "Smart TV"},
+{pictionary: "Sofa"},
+{pictionary: "Stool"},
+{pictionary: "Stove"},
+{pictionary: "Table Cloth"},
+{pictionary: "Toaster"},
+{pictionary: "Waffle Iron"},
+{pictionary: "Washing Machine"},
+
 // People
 {pictionary: "Donald Trump"},
 {pictionary: "Kim Kardashian"},
@@ -123,18 +148,14 @@ const PICTIONARIES = [
 {pictionary: "The Ugly Duckling"},
 
 // Places Around The World
-{pictionary: "Buckingham Palace"},
-{pictionary: "Burj Khalifa"},
-{pictionary: "Colosseum"},
 {pictionary: "Disney Land"},
 {pictionary: "Eiffel Tower"},
 {pictionary: "Empire State Building"},
-{pictionary: "James Bond"},
 {pictionary: "Great Wall of China"},
 {pictionary: "London Eye"},
-{pictionary: "Machu Picchu"},
 {pictionary: "Niagara Falls"},
 {pictionary: "Taj Mahal"},
+{pictionary: "The Colosseum"},
 {pictionary: "Times Square"},
 
 // Games
