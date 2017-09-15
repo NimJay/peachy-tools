@@ -64,6 +64,7 @@ const CHARADES = [
 {charade: "Wild Boar"},
 
 // Movies
+{charade: "21 Jump Street", ratedR: true},
 {charade: "Anaconda"},
 {charade: "Ant-Man"},
 {charade: "American Sniper"},
@@ -95,9 +96,11 @@ const CHARADES = [
 {charade: "Jurassic World"},
 {charade: "Kung Fu Panda"},
 {charade: "Lilo & Stitch"},
+{charade: "Magic Mike", ratedR: true},
 {charade: "Man of Steel"},
 {charade: "Madagascar"},
 {charade: "Meet the Robinsons"},
+{charade: "Men in Black"},
 {charade: "Monsters University"},
 {charade: "Monsters vs. Aliens"},
 {charade: "Monsters, Inc."},
@@ -106,6 +109,7 @@ const CHARADES = [
 {charade: "Now You See Me"},
 {charade: "Over the Hedge"},
 {charade: "Planet of the Apes"},
+{charade: "Pirates of the Caribbean"},
 {charade: "Pitch Perfect"},
 {charade: "Pulp Fiction", ratedR: true},
 {charade: "Ratatouille"},
@@ -118,10 +122,13 @@ const CHARADES = [
 {charade: "Star Wars"},
 {charade: "Suicide Squad"},
 {charade: "The Avengers"},
+{charade: "The Boss Baby"},
 {charade: "The Conjuring", ratedR: true},
 {charade: "The Croods"},
 {charade: "The Dark Knight"},
 {charade: "The Dark Knight Rises"},
+{charade: "The Dark Tower"},
+{charade: "The Emoji Movie"},
 {charade: "The Godfather", ratedR: true},
 {charade: "The Good Dinosaur"},
 {charade: "The Hangover", ratedR: true},
@@ -130,6 +137,7 @@ const CHARADES = [
 {charade: "The Lion King"},
 {charade: "The Martian"},
 {charade: "The Matrix"},
+{charade: "The Nut Job"},
 {charade: "The Polar Express"},
 {charade: "The Revenant"},
 {charade: "The Secret Life of Pets"},
@@ -143,13 +151,16 @@ const CHARADES = [
 {charade: "Up"},
 {charade: "WALL-E"},
 {charade: "World War Z"},
+{charade: "Wreck-It Ralph"},
 {charade: "Zootopia"},
 
 
 // Shows
 {charade: "Arthur"},
+{charade: "Baywatch", ratedR: true},
 {charade: "Breaking Bad", ratedR: true},
 {charade: "Curious George"},
+{charade: "Death Note"},
 {charade: "Family Guy", ratedR: true},
 {charade: "Friends"},
 {charade: "Game of Thrones", ratedR: true},
@@ -241,6 +252,7 @@ const CHARADES = [
 {charade: "Superman"},
 {charade: "Spider-Man"},
 {charade: "Teenage Mutant Ninja Turtles"},
+{charade: "Wonder Woman"},
 
 
 // Other
