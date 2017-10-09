@@ -188,7 +188,6 @@ const CHARADES = [
 {charade: "The Bugs Bunny Show"},
 {charade: "The Legend of Korra"},
 {charade: "The Office"},
-{charade: "The Simpsons"},
 {charade: "True Detective", ratedR: true},
 {charade: "13 Reasons Why"},
 
