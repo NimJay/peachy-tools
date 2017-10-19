@@ -13,7 +13,6 @@ const SLOGANS = [
     'Don\'t waste your uniqueness.',
     'Sometimes, less is more.',
     'Friendly reminder: don\'t worry too much.',
-    'Friendly reminder: nothing really matters.',
     'Why complicate life?'
 ];
 
