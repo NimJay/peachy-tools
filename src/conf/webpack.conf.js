@@ -3,9 +3,9 @@ const path = require('path');
 module.exports = {
 	entry: './js/PeachyTools.jsx',
 	output: {
-		path: path.resolve(__dirname, '../js/bundle/'),
+		path: path.resolve(__dirname, '../js/v3/'),
 		filename: 'peachytools.js',
-		publicPath: '/js/bundle/'
+		publicPath: '/js/v3/'
     },
 	watch: true,
 	module: {
