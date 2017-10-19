@@ -4,6 +4,7 @@ import Es6Promise from 'es6-promise/auto';
 
 import FreeSection from '../sections/FreeSection.jsx';
 import OpenSourceSection from '../sections/OpenSourceSection.jsx';
+import SuggestionsSection from '../sections/SuggestionsSection.jsx';
 import ToolSearchSection from '../sections/ToolSearchSection.jsx';
 import { log } from '../util/global.js';
 import { getToolByUrl } from '../util/Tool.js';
@@ -108,6 +109,7 @@ class ToolPage extends React.Component {
                 <aside>
                     <OpenSourceSection />
                     <FreeSection />
+                    <SuggestionsSection />
                 </aside>
             </div>
         )
