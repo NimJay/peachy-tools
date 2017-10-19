@@ -43,8 +43,15 @@ button, a.button {
     color: rgba(0, 0, 0, 0.5);
     border: none;
     border-radius: 6px;
-    transition: color 0.2s ease-out;
     box-shadow: -1px 1px 6px -1px rgba(0, 0, 0, 0.1);
+    @include transition(box-shadow 0.2s ease-out, opacity .2s ease-out);
+}
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+button:focus, a.button:focus {
+    box-shadow: -1px 1px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 input {
