@@ -77,10 +77,12 @@ const PICTIONARIES = [
 {pictionary: "Ballet Slippers"},
 {pictionary: "Baseball Cap"},
 {pictionary: "Cowboy Hat"},
+{pictionary: "Diamond Ring"},
 {pictionary: "Dress Shirt"},
 {pictionary: "Gym Shorts"},
 {pictionary: "High Heels"},
 {pictionary: "Overalls"},
+{pictionary: "Pearl Necklace"},
 {pictionary: "Rubber Boots"},
 {pictionary: "Running Shoes"},
 {pictionary: "Scarf"},
@@ -158,7 +160,7 @@ const PICTIONARIES = [
 {pictionary: "The Colosseum"},
 {pictionary: "Times Square"},
 
-// Games
+// Video Games
 {pictionary: "Battlefield"},
 {pictionary: "Call of Duty"},
 {pictionary: "Mario Kart"},
@@ -179,6 +181,36 @@ const PICTIONARIES = [
 {pictionary: "Tornado"},
 {pictionary: "Tsunami"},
 
+// Sports, Games, & Activities
+{pictionary: "American Football"},
+{pictionary: "Badminton Racquet"},
+{pictionary: "Baseball Bat"},
+{pictionary: "Backetball"},
+{pictionary: "Bowling"},
+{pictionary: "Boxing Gloves"},
+{pictionary: "Chessboard"},
+{pictionary: "Cricket"},
+{pictionary: "Cycling"},
+{pictionary: "Fishing Rod"},
+{pictionary: "Golf Stick"},
+{pictionary: "Gymnastics"},
+{pictionary: "Hockey"},
+{pictionary: "Ice Skating"},
+{pictionary: "Juggling"},
+{pictionary: "Karate"},
+{pictionary: "Parachute"},
+{pictionary: "Rugby"},
+{pictionary: "Sailboat"},
+{pictionary: "Skateboard"},
+{pictionary: "Snowboard"},
+{pictionary: "Ski Lift"},
+{pictionary: "Skydiving"},
+{pictionary: "Soccer Ball"},
+{pictionary: "Surfing"},
+{pictionary: "Swimming Pool"},
+{pictionary: "Tennis Ball"},
+{pictionary: "Volleyball Net"},
+{pictionary: "Weightlifting"},
 
 // Other
 {pictionary: "Broom"},
@@ -190,7 +222,7 @@ const PICTIONARIES = [
 {pictionary: "Message In A Bottle"},
 {pictionary: "Nail Polish"},
 {pictionary: "Perfume"},
-{pictionary: "Ski Lift"},
+{pictionary: "Pirate Ship"}
 {pictionary: "Sunscreen"},
 {pictionary: "Time Machine"}
 ];
