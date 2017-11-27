@@ -222,7 +222,7 @@ const PICTIONARIES = [
 {pictionary: "Message In A Bottle"},
 {pictionary: "Nail Polish"},
 {pictionary: "Perfume"},
-{pictionary: "Pirate Ship"}
+{pictionary: "Pirate Ship"},
 {pictionary: "Sunscreen"},
 {pictionary: "Time Machine"}
 ];
