@@ -21,3 +21,5 @@ CREATE TABLE suggestion (
     url             TEXT NOT NULL,
     time_created    TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
+
+ALTER TABLE suggestion ADD COLUMN ip_address VARCHAR(50); 

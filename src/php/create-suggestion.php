@@ -29,8 +29,17 @@ if (empty($suggestion)) {
     return;
 }
 
+// Retrieve IP Address.
+$ipAddress = getenv('HTTP_CLIENT_IP')?:
+getenv('HTTP_X_FORWARDED_FOR')?:
+getenv('HTTP_X_FORWARDED')?:
+getenv('HTTP_FORWARDED_FOR')?:
+getenv('HTTP_FORWARDED')?:
+getenv('REMOTE_ADDR');
+
 // Store the suggestion.
-$s = $pdo->prepare('INSERT INTO suggestion(suggestion, url) VALUES (:s, :u)');
-$r = $s->execute(array(':s' => $suggestion, ':u' => $url));
+$s = $pdo->prepare(
+    'INSERT INTO suggestion(suggestion, url, ip_address) VALUES (:s, :u, :i)');
+$r = $s->execute(array(':s' => $suggestion, ':u' => $url, ':i' => $ipAddress));
 if (!$r) $o['error'] = true;
 echo json_encode($o);
