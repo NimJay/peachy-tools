@@ -45,13 +45,14 @@ button, a.button {
     border-radius: 6px;
     box-shadow: -1px 1px 6px -1px rgba(0, 0, 0, 0.1);
     @include transition(box-shadow 0.2s ease-out, opacity .2s ease-out);
-}
-button:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-button:focus, a.button:focus {
-    box-shadow: -1px 1px 10px 0px rgba(0, 0, 0, 0.2);
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+    &:focus {
+        box-shadow: -1px 1px 10px 0px rgba(0, 0, 0, 0.2);
+    }
 }
 
 input {
@@ -69,6 +70,9 @@ textarea {
     border-left: solid 2px rgba(0, 0, 0, 0.1);
 }
 textarea:focus {border-left: solid 2px $color-green;}
+
+.background-color-red {background-color: $color-salmon;}
+.background-color-green {background-color: $color-green;}
 
 h1, h2, h3 {font-weight: normal;}
 
@@ -150,6 +154,19 @@ main {
     output.hidden {opacity: 0;}
 }
 
+// Form stuff.
+p.errormessage {
+    min-height: 4em;
+    color: $color-salmon;
+}
+.buttonrow {
+    margin-top: 15px;
+    text-align: right;
+    > button, > a.button {
+        margin-left: 15px;
+    }
+}
+
 // Mobile
 @media(max-width: 600px) {
     // <ToolComponent>
@@ -161,3 +178,4 @@ main {
 
 @import 'toolsearchsection';
 @import 'checkbox';
+@import 'textfield';

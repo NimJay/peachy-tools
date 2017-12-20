@@ -6,6 +6,7 @@ RewriteRule ^purpose$ index.php
 # Tools
 RewriteRule ^character-counter$ index.php
 RewriteRule ^charades-generator$ index.php
+RewriteRule ^exam-timer$ index.php
 RewriteRule ^pearson-correlation-coefficient-calculator$ index.php
 RewriteRule ^pictionary-generator$ index.php
 RewriteRule ^random-number-generator$ index.php

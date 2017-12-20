@@ -28,6 +28,15 @@ const TOOLS = [
         ]
     },
     {
+        url: 'exam-timer',
+        name: 'Exam Timer',
+        description: 'Countdown the time in hours and minutes for an exam.',
+        keywords: [
+            'exam', 'timer', 'countdown', 'clock', 'hour', 'test', 'minute',
+            'stopwatch', 'quiz'
+        ]
+    },
+    {
         url: 'pearson-correlation-coefficient-calculator',
         name: 'Pearson Correlation Coefficient Calculator',
         description:

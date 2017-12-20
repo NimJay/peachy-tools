@@ -10,7 +10,13 @@ $TOOLS = [
     [
         'url' => 'charades-generator',
         'name' => 'Charades Generator',
-        'description' => 'Generate words and phrases for Charades party game.',
+        'description' => 'Generate words and phrases for Charades party game.'
+    ],
+
+    [
+        'url' => 'exam-timer',
+        'name' => 'Exam Timer',
+        'description' => 'Countdown the time in hours and minutes for an exam.'
     ],
 
     [
