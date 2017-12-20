@@ -1,0 +1,24 @@
+div.textfield {
+
+	display: inline-block;
+	padding: 5px;
+	line-height: 0px;
+
+	label {
+		display: block;
+		font-size: 0.6em;
+		color: rgba(0, 0, 0, 0.6);
+	}
+	input {
+		display: block;
+		font-size: 1em;
+		width: 100%;
+		padding: 0.5em 0px 0.3em 0px;
+		border: none;
+		outline: none;
+		border-bottom: solid 2px rgba(0, 0, 0, 0.2);
+	}
+	input:focus {
+		border-bottom: solid 2px $color-green;
+	}
+}
