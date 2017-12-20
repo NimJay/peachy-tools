@@ -74,6 +74,11 @@ textarea:focus {border-left: solid 2px $color-green;}
 .background-color-red {background-color: $color-salmon;}
 .background-color-green {background-color: $color-green;}
 
+em {
+    font-weight: 700;
+    font-style: normal;
+}
+
 h1, h2, h3 {font-weight: normal;}
 
 h2 {
