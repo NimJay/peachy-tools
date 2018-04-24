@@ -14,6 +14,9 @@ class ContributePage extends React.Component {
     componentWillMount() {
         document.title = "Contribute - Peachy Tools";
     }
+    componentDidMount() {
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+    }
     componentWillUnmount() {
         document.title = this.state.initialTitle; // Revert title.
     }
