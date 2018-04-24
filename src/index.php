@@ -5,13 +5,14 @@
         <meta charset="utf-8">
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<!-- Production only
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108360287-1"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
 			gtag('config', 'UA-108360287-1');
-		</script>
+		</script> -->
 
 		<!-- Mobile Browser Toolbar Color -->
 		<!-- Chrome, Firefox OS and Opera --><meta name="theme-color" content="#95dc5f">
