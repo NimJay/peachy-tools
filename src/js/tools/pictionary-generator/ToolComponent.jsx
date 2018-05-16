@@ -1,6 +1,7 @@
 import React from 'react'
 import { getNextPictionary } from './Pictionary.js'
 import Output from '../../components/Output.jsx'
+import Selections from '../../components/Selections.jsx'
 
 
 class ToolComponent extends React.Component {
@@ -9,30 +10,53 @@ class ToolComponent extends React.Component {
         super(props);
         this.state = {
             pictionary: getNextPictionary(),
-            iteration: 0
+            iteration: 0,
+            isEasyOnly: false,
+            isHardOnly: false,
+            difficulty: 'All'
         };
+    }
+
+    setDifficulty(difficulty) {
+        this.setState({ difficulty });
     }
 
     onSubmit(e) {
         e.preventDefault(); // Prevent page refresh.
-        this.setState(
-            { pictionary: getNextPictionary(), iteration: this.state.iteration + 1 });
+        let { difficulty, iteration } = this.state,
+            pictionary = getNextPictionary();
+
+        if (difficulty != 'All') {
+            let isEasy = difficulty == 'Easy';
+            while (!!pictionary.isEasy != isEasy && i > 0)
+                pictionary = getNextPictionary();
+        }
+
+        iteration++;
+        this.setState({ pictionary, iteration });
     }
 
     render() {
-        let { pictionary, iteration } = this.state;
+        let { difficulty, pictionary, iteration } = this.state;
         return (
             <main>
-                <div className="container">
-                    <form onSubmit={this.onSubmit.bind(this)}>
-                        <Output style={{'minHeight': '2.5em'}}
-                            iteration={iteration}>{pictionary}</Output>
-                        <div style={{'textAlign': 'right'}}>
-                            <button type="submit"
-                                autoFocus={true}>GENERATE</button>
-                        </div>
-                    </form>
-                </div>
+                <form className="container"
+                    onSubmit={this.onSubmit.bind(this)}>
+
+                    <Output style={{'minHeight': '2.5em'}}
+                        iteration={iteration}>
+                        {pictionary.pictionary}
+                    </Output>
+                    <div style={{'textAlign': 'right'}}>
+                        <button type="submit"
+                            autoFocus={true}>GENERATE</button>
+                    </div>
+
+                    <Selections selections={['Easy', 'Hard', 'All']}
+                        selection={difficulty}
+                        name="Difficulty"
+                        onSelect={this.setDifficulty.bind(this)} />
+                </form>
             </main>
         );
     }
