@@ -11,8 +11,6 @@ class ToolComponent extends React.Component {
         this.state = {
             pictionary: getNextPictionary(),
             iteration: 0,
-            isEasyOnly: false,
-            isHardOnly: false,
             difficulty: 'All'
         };
     }
@@ -26,10 +24,10 @@ class ToolComponent extends React.Component {
         let { difficulty, iteration } = this.state,
             pictionary = getNextPictionary();
 
-        if (difficulty != 'All') {
-            let isEasy = difficulty == 'Easy';
-            while (!!pictionary.isEasy != isEasy && i > 0)
-                pictionary = getNextPictionary();
+        if (difficulty !== 'All') {
+            let isEasy = difficulty === 'Easy';
+            while (Boolean(pictionary.isEasy) !== isEasy)
+              pictionary = getNextPictionary();
         }
 
         iteration++;

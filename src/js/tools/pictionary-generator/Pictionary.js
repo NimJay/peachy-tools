@@ -183,6 +183,7 @@ const PICTIONARIES = [
 {pictionary: "Little Red Riding Hood"},
 {pictionary: "Pinocchio", isEasy: true},
 {pictionary: "Rapunzel", isEasy: true},
+{pictionary: "Robin Hood"},
 {pictionary: "Snow White"},
 {pictionary: "The Little Mermaid"},
 {pictionary: "The Ugly Duckling"},
@@ -206,6 +207,7 @@ const PICTIONARIES = [
 {pictionary: "Pokemon GO"},
 
 // Comic Characters
+{pictionary: "Aquaman", isEasy: true},
 {pictionary: "Batman", isEasy: true},
 {pictionary: "Deadpool"},
 {pictionary: "Iron Man"},
@@ -223,7 +225,7 @@ const PICTIONARIES = [
 {pictionary: "American Football", isEasy: true},
 {pictionary: "Badminton Racquet"},
 {pictionary: "Baseball Bat", isEasy: true},
-{pictionary: "Backetball", isEasy: true},
+{pictionary: "Basketball", isEasy: true},
 {pictionary: "Bowling", isEasy: true},
 {pictionary: "Boxing Gloves", isEasy: true},
 {pictionary: "Chessboard", isEasy: true},
