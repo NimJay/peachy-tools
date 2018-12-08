@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Es6Promise from 'es6-promise/auto';
 
 import FreeSection from '../sections/FreeSection.jsx';
-import OpenSourceSection from '../sections/OpenSourceSection.jsx';
 import SuggestionsSection from '../sections/SuggestionsSection.jsx';
 import ToolSearchSection from '../sections/ToolSearchSection.jsx';
 import { log } from '../util/global.js';
@@ -108,7 +107,6 @@ class ToolPage extends React.Component {
                 <ToolSearchSection />
 
                 <aside>
-                    <OpenSourceSection />
                     <FreeSection />
                     <SuggestionsSection />
                 </aside>
