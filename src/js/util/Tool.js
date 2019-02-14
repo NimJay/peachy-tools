@@ -73,7 +73,6 @@ const TOOLS = [
  * Note: Each Tool has a unique URL.
  */
 function getToolByUrl(url) {
-    console.log('Looking for: ' + url);
     return TOOLS.find(t => t.url == url);
 }
 
@@ -100,7 +99,6 @@ function searchTools(searchString) {
             score += tool.description.toLowerCase().includes(s);
             score += tool.keywords.filter(k => k.includes(s)).length * 0.5;
         }
-        console.log(tool.url + " scored " + score);
         return score;
     };
 

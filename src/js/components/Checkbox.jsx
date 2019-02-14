@@ -13,7 +13,6 @@ class Checkbox extends React.Component {
 
 
     onChange(e) {
-        console.log(4);
         let { value, onChange } = this.props;
         if (onChange) onChange(!value);
     }
