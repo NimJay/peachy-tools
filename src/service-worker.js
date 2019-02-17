@@ -21,14 +21,14 @@ try {
         '/random-number-generator',
 
         // JS
-        '/js/v4/peachytools.js',
-        '/js/v4/0.peachytools.js',
-        '/js/v4/1.peachytools.js',
-        '/js/v4/2.peachytools.js',
-        '/js/v4/3.peachytools.js',
-        '/js/v4/4.peachytools.js',
+        '/js/v5/peachytools.js',
+        '/js/v5/0.peachytools.js',
+        '/js/v5/1.peachytools.js',
+        '/js/v5/2.peachytools.js',
+        '/js/v5/3.peachytools.js',
+        '/js/v5/4.peachytools.js',
 
-        '/css/peachytools.css?v=4',
+        '/css/peachytools.css?v=5',
         '/favicon.png',
         '/img/favicon-192.png',
     ];
