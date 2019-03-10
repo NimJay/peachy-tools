@@ -8,7 +8,7 @@ try {
 
     console.log("SW - Running...");
 
-    const CACHE_NAME = 'peachytools1';
+    const CACHE_NAME = 'peachytools2';
     const URLS_AVAILABLE_OFFLINE = [
         '/',
 
@@ -16,17 +16,16 @@ try {
         '/character-counter',
         '/charades-generator',
         '/exam-timer',
-        '/pearson-correlation-coefficient-calculator',
         '/pictionary-generator',
         '/random-number-generator',
 
         // JS
         '/js/v6/peachytools.js',
-        '/js/v6/0.peachytools.js',
-        '/js/v6/1.peachytools.js',
-        '/js/v6/2.peachytools.js',
-        '/js/v6/3.peachytools.js',
-        '/js/v6/4.peachytools.js',
+        '/js/v6/character-counter.peachytools.js',
+        '/js/v6/charades-generator.peachytools.js',
+        '/js/v6/exam-timer.peachytools.js',
+        '/js/v6/pictionary-generator.peachytools.js',
+        '/js/v6/random-number-generator.peachytools.js',
 
         '/css/peachytools.css?v=6',
         '/favicon.png',
