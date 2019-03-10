@@ -41,5 +41,5 @@ render((
 
 // Service Worker (for offline support, etc)
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js', { scope: '/' });
+    navigator.serviceWorker.register('/swoff.js', { scope: '/' });
 }
