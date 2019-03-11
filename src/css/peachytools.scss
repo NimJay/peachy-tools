@@ -172,6 +172,11 @@ p.errormessage {
     }
 }
 
+// Variables.
+.color-salmon {
+    color: $color-salmon;
+}
+
 // Mobile
 @media(max-width: 600px) {
     // <ToolComponent>

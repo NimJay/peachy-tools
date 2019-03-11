@@ -28,6 +28,15 @@ const TOOLS = [
         ]
     },
     {
+        url: 'combinations-generator',
+        name: 'Combinations Generator',
+        description: 'Generate all combinations of any size from a group of items.',
+        keywords: [
+            'combination', 'generator', 'generate', 'n', 'choose', 'k',
+            'permutations', 'subsets', 'pick', 'selection'
+        ]
+    },
+    {
         url: 'exam-timer',
         name: 'Exam Timer',
         description: 'Countdown the time in hours and minutes for an exam.',

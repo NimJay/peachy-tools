@@ -14,6 +14,12 @@ $TOOLS = [
     ],
 
     [
+        'url' => 'combinations-generator',
+        'name' => 'Combinations Generator',
+        'description' => 'Generate all combinations of any size from a group of items.'
+    ],
+
+    [
         'url' => 'exam-timer',
         'name' => 'Exam Timer',
         'description' => 'Countdown the time in hours and minutes for an exam.'
