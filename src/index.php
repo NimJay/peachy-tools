@@ -42,7 +42,14 @@
 	</head>
 
 	<body>
-		   <div id="peachytools"></div>
+		   <div id="peachytools">
+			   <section>
+				   <div class="container">
+					   <h2 style="margin-bottom: 0px;">Loading...</h2>
+					   <p>Please make sure JavaScript is enabled.</p>
+				   </div>
+			   </section>
+		   </div>
            <!-- index.js -->
            <script src="/js/v6/peachytools.js"></script>
 	</body>
