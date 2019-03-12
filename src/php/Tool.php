@@ -32,6 +32,12 @@ $TOOLS = [
     ],
 
     [
+        'url' => 'permutations-generator',
+        'name' => 'Permutations Generator',
+        'description' => 'Generate all permutations of any size from a set of items.'
+    ],
+
+    [
         'url' => 'pictionary-generator',
         'name' => 'Pictionary Generator',
         'description' => 'Generate words and phrases for Pictionary word game.'

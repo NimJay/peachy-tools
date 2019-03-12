@@ -1,7 +1,7 @@
 import React from 'react'
 import Output from '../../components/Output.jsx'
 import TextField from '../../components/TextField.jsx'
-import { generateCombinations } from './Combinations.js';
+import { generatePermutations } from './Permutations.js';
 
 class ToolComponent extends React.Component {
 
@@ -11,32 +11,32 @@ class ToolComponent extends React.Component {
             isLoading: true,
             errorMessage: null,
             items: "Apple, Banana, Cherry",
-            combinationSize: 2, // The "k" of "n choose k".
-            combinations: [],
+            permutationSize: 2,
+            permutations: [],
         };
     }
 
     componentDidMount() {
-        this.updateCombinations();
+        this.updatePermutations();
     }
 
     // State setters.
     setItems(e) {
         this.setState(
             { items: e.target.value, isLoading: true, errorMessage: "" },
-            this.updateCombinations.bind(this)
+            this.updatePermutations.bind(this)
         );
     }
-    setCombinationSize(e) {
+    setPermutationSize(e) {
         this.setState(
-            { combinationSize: e.target.value, isLoading: true, errorMessage: "" },
-            this.updateCombinations.bind(this)
+            { permutationSize: e.target.value, isLoading: true, errorMessage: "" },
+            this.updatePermutations.bind(this)
         );
     }
 
 
-    updateCombinations() {
-        let { items, combinationSize } = this.state;
+    updatePermutations() {
+        let { items, permutationSize } = this.state;
 
         // Convert items to Array of strings.
         items = items
@@ -49,10 +49,10 @@ class ToolComponent extends React.Component {
         if (items.length === 0) {
             errorMessage = 'Invalid list of items.';
         }
-        if (items.length < combinationSize) {
+        if (items.length < permutationSize) {
             errorMessage = 'Size of Combinations is too high.';
         }
-        if (isNaN(Number(combinationSize))) {
+        if (isNaN(Number(permutationSize))) {
             errorMessage = 'Size of Combinations is invalid.';
         }
         if (errorMessage) {
@@ -61,16 +61,16 @@ class ToolComponent extends React.Component {
 
         this.setState({
             isLoading: false,
-            combinations: generateCombinations(items, Number(combinationSize))
+            permutations: generatePermutations(items, Number(permutationSize))
         });
     }
 
 
     render() {
-        let { isLoading, errorMessage, items, combinationSize, combinations } = this.state,
-            numOfCombinations = combinations.length;
+        let { isLoading, errorMessage, items, permutationSize, permutations } = this.state,
+            numOfPermutations = permutations.length;
 
-        let combinationsDivs = combinations.map((comb, i) =>
+        let permutationsDivs = permutations.map((comb, i) =>
             <div key={i}>{comb.join(", ")}</div>
         );
 
@@ -82,16 +82,16 @@ class ToolComponent extends React.Component {
                             placeholder="Apple, Banana, Cherry, ..." autoFocus={true}>
                         </textarea>
 
-                        <TextField label="Size of Combinations (k)" value={combinationSize}
-                            onChange={this.setCombinationSize.bind(this)}
+                        <TextField label="Size of Permutations" value={permutationSize}
+                            onChange={this.setPermutationSize.bind(this)}
                             maxLength="2" placeholder="0" style={{ marginTop: '20px', width: '143px' }} />
 
                         {isLoading && <p>Loading...</p>}
                         <p className="color-salmon">{errorMessage}</p>
                         {!errorMessage && !isLoading &&
-                            <label style={{ fontSize: '0.6em', color: 'rgba(0, 0, 0, 0.6)' }}>{numOfCombinations} combinations:</label>}
+                            <label style={{ fontSize: '0.6em', color: 'rgba(0, 0, 0, 0.6)' }}>{numOfPermutations} permutations:</label>}
                         <output style={{ marginTop: '0', fontSize: '16px' }}>
-                            {Number(combinationSize) === 0 ? '_' : combinationsDivs}
+                            {Number(permutationSize) === 0 ? '_' : permutationsDivs}
                         </output>
                     </form>
                 </div>

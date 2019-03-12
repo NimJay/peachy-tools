@@ -17,6 +17,7 @@ app.get('/character-counter', sendIndex);
 app.get('/charades-generator', sendIndex);
 app.get('/combinations-generator', sendIndex);
 app.get('/exam-timer', sendIndex);
+app.get('/permutations-generator', sendIndex);
 app.get('/pictionary-generator', sendIndex);
 app.get('/random-number-generator', sendIndex);
 

@@ -30,7 +30,7 @@ const TOOLS = [
     {
         url: 'combinations-generator',
         name: 'Combinations Generator',
-        description: 'Generate all combinations of any size from a group of items.',
+        description: 'Generate all combinations of any size from a set of items.',
         keywords: [
             'combination', 'generator', 'generate', 'n', 'choose', 'k',
             'permutations', 'subsets', 'pick', 'selection'
@@ -56,6 +56,14 @@ const TOOLS = [
             'product', 'moment', 'ppmcc'
         ],
         disabled: true
+    },
+    {
+        url: 'permutations-generator',
+        name: 'Permutations Generator',
+        description: 'Generate all permutations of any size from a set of items.',
+        keywords: [
+            'permutation', 'generator', 'generate', 'permute', 'arrange', 'order', 'sequence'
+        ]
     },
     {
         url: 'pictionary-generator',
