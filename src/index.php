@@ -19,7 +19,8 @@
 		<!-- Windows Phone --><meta name="msapplication-navbutton-color" content="#95dc5f">
 		<!-- iOS Safari --><meta name="apple-mobile-web-app-status-bar-style" content="#95dc5f">
 
-		<!-- Chrome "Add to Homescreen" -->
+		<!-- manifest.json + "Add to Homescreen" -->
+		<link rel="manifest" href="/manifest.json">
 		<meta name="mobile-web-app-capable" content="yes">
 		<link rel="icon" href="/img/favicon-192.png" sizes="192x192">
 
