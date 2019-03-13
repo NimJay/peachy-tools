@@ -50,10 +50,10 @@ class ToolComponent extends React.Component {
             errorMessage = 'Invalid list of items.';
         }
         if (items.length < permutationSize) {
-            errorMessage = 'Size of Combinations is too high.';
+            errorMessage = 'Size of Permutations is too high.';
         }
         if (isNaN(Number(permutationSize))) {
-            errorMessage = 'Size of Combinations is invalid.';
+            errorMessage = 'Size of Permutations is invalid.';
         }
         if (errorMessage) {
             return this.setState({ isLoading: false, errorMessage: errorMessage });
@@ -89,7 +89,9 @@ class ToolComponent extends React.Component {
                         {isLoading && <p>Loading...</p>}
                         <p className="color-salmon">{errorMessage}</p>
                         {!errorMessage && !isLoading &&
-                            <label style={{ fontSize: '0.6em', color: 'rgba(0, 0, 0, 0.6)' }}>{numOfPermutations} permutations:</label>}
+                            <label style={{ fontSize: '0.6em', color: 'rgba(0, 0, 0, 0.6)' }}>
+                                {numOfPermutations} Permutations
+                            </label>}
                         <output style={{ marginTop: '0', fontSize: '16px' }}>
                             {Number(permutationSize) === 0 ? '_' : permutationsDivs}
                         </output>

@@ -89,7 +89,9 @@ class ToolComponent extends React.Component {
                         {isLoading && <p>Loading...</p>}
                         <p className="color-salmon">{errorMessage}</p>
                         {!errorMessage && !isLoading &&
-                            <label style={{ fontSize: '0.6em', color: 'rgba(0, 0, 0, 0.6)' }}>{numOfCombinations} combinations:</label>}
+                            <label style={{ fontSize: '0.6em', color: 'rgba(0, 0, 0, 0.6)' }}>
+                                {numOfCombinations} Combinations
+                            </label>}
                         <output style={{ marginTop: '0', fontSize: '16px' }}>
                             {Number(combinationSize) === 0 ? '_' : combinationsDivs}
                         </output>
