@@ -14,6 +14,7 @@ To create a new Tool as [/my-new-tool](https://peachytools.com/my-new-tool)
 5. Add it to `swoff.js`.
 6. Add it to `main.js`.
 7. Add it to `sitemap.xml`.
+8. Add it to `.htaccess`.
 
 
 ## Deployment Checklist

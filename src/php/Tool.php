@@ -47,6 +47,12 @@ $TOOLS = [
         'url' => 'random-number-generator',
         'name' => 'Random Number Generator',
         'description' => 'Generate random numbers.'
+    ],
+
+    [
+        'url' => 'recipe-scaler',
+        'name' => 'Recipe Scaler',
+        'description' => 'Convert a recipe from one serving size to another.'
     ]
 ];
 

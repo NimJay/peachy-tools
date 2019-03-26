@@ -20,6 +20,7 @@ app.get('/exam-timer', sendIndex);
 app.get('/permutations-generator', sendIndex);
 app.get('/pictionary-generator', sendIndex);
 app.get('/random-number-generator', sendIndex);
+app.get('/recipe-scaler', sendIndex);
 
 // Everything else: index.html with 404.
 app.use((req, res) => {

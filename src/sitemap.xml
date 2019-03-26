@@ -59,4 +59,10 @@
         <priority>0.5</priority>
     </url>
 
+    <url>
+        <loc>https://peachytools.com/recipe-scaler</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
 </urlset>

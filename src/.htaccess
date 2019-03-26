@@ -9,7 +9,9 @@ RewriteRule ^charades-generator$ index.php
 RewriteRule ^combinations-generator$ index.php
 RewriteRule ^exam-timer$ index.php
 RewriteRule ^pearson-correlation-coefficient-calculator$ index.php
+RewriteRule ^permutations-generator$ index.php
 RewriteRule ^pictionary-generator$ index.php
 RewriteRule ^random-number-generator$ index.php
+RewriteRule ^recipe-scaler$ index.php
 
 ErrorDocument 404 /index.php

@@ -81,6 +81,15 @@ const TOOLS = [
         keywords: [
             'random', 'number', 'generator', 'generate', 'integer'
         ]
+    },
+    {
+        url: 'recipe-scaler',
+        name: 'Recipe Scaler',
+        description: 'Convert a recipe from one serving size to another.',
+        keywords: [
+            'recipe', 'scale', 'convert', 'serving', 'divide', 'multiply', 'ingredients', 'cook',
+            'ratio', 'portion'
+        ]
     }
 ];
 
