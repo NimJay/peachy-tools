@@ -107,12 +107,12 @@ class ToolPage extends React.Component {
                 {tool === null ? <NotFoundSection /> : null}
                 {toolImported ? <Header tool={tool} /> : null}
 
-                <ToolSearchSection />
-
                 <aside>
-                    <FreeSection />
                     <SuggestionsSection />
+                    <FreeSection />
                 </aside>
+
+                <ToolSearchSection />
             </div>
         )
     }
