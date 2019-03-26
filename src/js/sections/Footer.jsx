@@ -11,7 +11,7 @@ const SLOGANS = [
     // Advice we take we want users to take.
     'Be simple.',
     'Don\'t waste your uniqueness.',
-    'Sometimes, less is more.',
+    'Often, less is more.',
     'Friendly reminder: don\'t worry too much.',
     'Why complicate life?'
 ];
