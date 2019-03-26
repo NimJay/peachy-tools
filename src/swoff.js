@@ -7,7 +7,7 @@
  */
 
 
-const CACHE_NAME = 'peachytools6';
+const CACHE_NAME = 'peachytools7';
 
 
 /**
@@ -32,17 +32,17 @@ const URL_CACHE_INFO = [
   { url: '/recipe-scaler' },
 
   // JS
-  { url: '/js/v6/peachytools.js', cacheAsap: true },
-  { url: '/js/v6/character-counter.peachytools.js' },
-  { url: '/js/v6/charades-generator.peachytools.js' },
-  { url: '/js/v6/combinations-generator.peachytools.js' },
-  { url: '/js/v6/exam-timer.peachytools.js' },
-  { url: '/js/v6/permutations-generator.peachytools.js' },
-  { url: '/js/v6/pictionary-generator.peachytools.js' },
-  { url: '/js/v6/random-number-generator.peachytools.js' },
-  { url: '/js/v6/recipe-scaler.peachytools.js' },
+  { url: '/js/v7/peachytools.js', cacheAsap: true },
+  { url: '/js/v7/character-counter.peachytools.js' },
+  { url: '/js/v7/charades-generator.peachytools.js' },
+  { url: '/js/v7/combinations-generator.peachytools.js' },
+  { url: '/js/v7/exam-timer.peachytools.js' },
+  { url: '/js/v7/permutations-generator.peachytools.js' },
+  { url: '/js/v7/pictionary-generator.peachytools.js' },
+  { url: '/js/v7/random-number-generator.peachytools.js' },
+  { url: '/js/v7/recipe-scaler.peachytools.js' },
 
-  { url: '/css/peachytools.css?v=6', cacheAsap: true },
+  { url: '/css/peachytools.css?v=7', cacheAsap: true },
   { url: '/favicon.png', cacheAsap: true },
   { url: '/img/favicon-192.png', cacheAsap: true },
 ];
