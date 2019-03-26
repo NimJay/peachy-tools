@@ -51,7 +51,7 @@ class ToolPage extends React.Component {
         else if (toolUrl == 'permutations-generator') promise = import(/* webpackChunkName:'permutations-generator' */'../tools/permutations-generator/ToolComponent.jsx');
         else if (toolUrl == 'pictionary-generator') promise = import(/* webpackChunkName:'pictionary-generator' */'../tools/pictionary-generator/ToolComponent.jsx');
         else if (toolUrl == 'random-number-generator') promise = import(/* webpackChunkName:'random-number-generator' */'../tools/random-number-generator/ToolComponent.jsx');
-        else if (toolUrl == 'recipe-scaler') promise = import(/* webpackChunkName:'recipe-scaler' */'../tools/recipe-scaler/ToolComponent.jsx');
+        else if (toolUrl == 'recipe-converter') promise = import(/* webpackChunkName:'recipe-converter' */'../tools/recipe-converter/ToolComponent.jsx');
         // else if (tool == 'superhero-name-generator') {promise = import('../tools/superhero-name-generator/ToolComponent.jsx')}
         // else if (tool == 'pearson-correlation-coefficient-calculator') {promise = import('../tools/pearson-correlation-coefficient-calculator/ToolComponent.jsx')}
 

@@ -50,9 +50,9 @@ $TOOLS = [
     ],
 
     [
-        'url' => 'recipe-scaler',
-        'name' => 'Recipe Scaler',
-        'description' => 'Convert a recipe from one serving size to another.'
+        'url' => 'recipe-converter',
+        'name' => 'Recipe Converter',
+        'description' => 'Scale a recipe from one serving size to another.'
     ]
 ];
 

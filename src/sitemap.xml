@@ -27,7 +27,6 @@
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
    </url>
-   </url>
 
    <url>
         <loc>https://peachytools.com/combinations-generator</loc>
@@ -60,7 +59,7 @@
     </url>
 
     <url>
-        <loc>https://peachytools.com/recipe-scaler</loc>
+        <loc>https://peachytools.com/recipe-converter</loc>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>

@@ -29,7 +29,7 @@ const URL_CACHE_INFO = [
   { url: '/permutations-generator' },
   { url: '/pictionary-generator' },
   { url: '/random-number-generator' },
-  { url: '/recipe-scaler' },
+  { url: '/recipe-converter' },
 
   // JS
   { url: '/js/v7/peachytools.js', cacheAsap: true },
@@ -40,7 +40,7 @@ const URL_CACHE_INFO = [
   { url: '/js/v7/permutations-generator.peachytools.js' },
   { url: '/js/v7/pictionary-generator.peachytools.js' },
   { url: '/js/v7/random-number-generator.peachytools.js' },
-  { url: '/js/v7/recipe-scaler.peachytools.js' },
+  { url: '/js/v7/recipe-converter.peachytools.js' },
 
   { url: '/css/peachytools.css?v=7', cacheAsap: true },
   { url: '/favicon.png', cacheAsap: true },
