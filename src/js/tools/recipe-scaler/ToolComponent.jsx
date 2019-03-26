@@ -107,10 +107,15 @@ class ToolComponent extends React.Component {
     }
 }
 
+function roundTo1Dp(number) {
+    // Caution: Read https://stackoverflow.com/q/588004.
+    return Number(number.toFixed(1));
+}
+
 const StrNumTokensRecipeDiv = ({ strNumTokens }) => {
     let tokenSpans = strNumTokens.map((token, i) => {
         return typeof token === "number"
-            ? <span key={i} style={{backgroundColor:'rgba(149, 220, 95, 0.2)'}}>{token}</span>
+            ? <span key={i} style={{backgroundColor:'rgba(149, 220, 95, 0.2)'}}>{roundTo1Dp(token)}</span>
             : <span style={{display: "inline", whiteSpace: "pre-wrap"}} key={i}>{token}</span>
     });
     return (<div style={{ fontSize: '18px', lineHeight: '1.5em' }}>{tokenSpans}</div>);
