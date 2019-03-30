@@ -41,6 +41,7 @@ class ToolComponent extends React.Component {
                         <textarea value={text}
                             onChange={this.setText.bind(this)}
                             placeholder="Type your text here..."
+                            title="Type your text here..."
                             autoFocus={true}></textarea>
                         <Output iteration={iteration}>
                             {totalCharacters} characters

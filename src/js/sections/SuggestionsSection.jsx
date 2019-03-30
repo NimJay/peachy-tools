@@ -53,6 +53,7 @@ class SuggestionsSection extends React.Component {
                         <textarea value={suggestion} style={{'height': '4em'}}
                             onChange={this.setSuggestion.bind(this)}
                             placeholder='How can we improve?'
+                            title='How can we improve?'
                             maxLength={500} />
                             <div style={{'textAlign': 'right', 'margin': '10px 0px'}}>
                                 <button type='submit'

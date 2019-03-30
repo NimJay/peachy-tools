@@ -85,7 +85,8 @@ class ToolComponent extends React.Component {
                                 maxLength="2" placeholder="0" style={{ width: '100px' }} />
                             <textarea value={recipe} onChange={this.setRecipe.bind(this)}
                                 style={{ marginTop: '20px', height: '400px', fontSize: '18px', lineHeight: '1.5em' }}
-                                placeholder="Type your recipe here..." autoFocus={true}>
+                                placeholder="Type your recipe here..." autoFocus={true}
+                                title="Type your recipe here...">
                             </textarea>
                         </div>
                         <div style={{ display: 'inline-block', width: '50%', verticalAlign: 'top' }}>

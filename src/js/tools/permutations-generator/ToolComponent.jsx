@@ -79,7 +79,8 @@ class ToolComponent extends React.Component {
                 <div className="container">
                     <form>
                         <textarea value={items} onChange={this.setItems.bind(this)}
-                            placeholder="Apple, Banana, Cherry, ..." autoFocus={true}>
+                            placeholder="Apple, Banana, Cherry, ..." autoFocus={true}
+                            title="Items">
                         </textarea>
 
                         <TextField label="Size of Permutations" value={permutationSize}

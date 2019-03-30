@@ -1,5 +1,7 @@
 import React from 'react';
 
+let nextId = 0; // Each <TextField> has an id.
+
 /**
  * TextField
  * A textfield for text input.
@@ -12,17 +14,29 @@ import React from 'react';
  * style: style for the outer-most <div>.
  * onChange: onChange function on <input>.
  */
-const TextField = ({ value, label, placeholder, onChange, autoFocus, maxLength,
-    style }) => {
+class TextField extends React.Component {
 
-    return (
-        <div className="textfield" style={style}>
-            <label>{label}</label>
-            <input type="text" value={value} autoFocus={autoFocus}
-                placeholder={placeholder} maxLength={maxLength}
-                onChange={onChange} />
-        </div>
-    );
+    constructor(props) {
+        super(props);
+        this.id = nextId;
+        nextId++;
+    }
+
+    render() {
+
+        let { value, label, placeholder, onChange, autoFocus, maxLength, style } = this.props;
+
+        let inputId = "textfield-" + this.id;
+
+        return (
+            <div className="textfield" style={style}>
+                <label htmlFor={inputId}>{label}</label>
+                <input type="text" value={value} autoFocus={autoFocus}
+                    placeholder={placeholder} maxLength={maxLength}
+                    onChange={onChange} id={inputId} />
+            </div>
+        );
+    }
 }
 
 export default TextField;
