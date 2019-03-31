@@ -28,12 +28,18 @@ class TextField extends React.Component {
 
         let inputId = "textfield-" + this.id;
 
+        /* Limit the width of the <input> based on the maxLength.
+         * I assume each character is about 0.9em in width.
+         * The "@" symbol is pretty wide though (looks wider than 0.9em).
+         */
+        let inputStyle = { maxWidth: (0.9 * (maxLength || 20)) + 'em' };
+
         return (
             <div className="textfield" style={style}>
                 <label htmlFor={inputId}>{label}</label>
                 <input type="text" value={value} autoFocus={autoFocus}
                     placeholder={placeholder} maxLength={maxLength}
-                    onChange={onChange} id={inputId} />
+                    onChange={onChange} id={inputId} style={inputStyle} />
             </div>
         );
     }

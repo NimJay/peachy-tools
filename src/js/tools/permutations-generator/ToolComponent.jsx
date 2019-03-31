@@ -85,7 +85,7 @@ class ToolComponent extends React.Component {
 
                         <TextField label="Size of Permutations" value={permutationSize}
                             onChange={this.setPermutationSize.bind(this)}
-                            maxLength="2" placeholder="0" style={{ marginTop: '20px', width: '143px' }} />
+                            maxLength="2" placeholder="0" style={{ marginTop: '20px' }} />
 
                         {isLoading && <p>Loading...</p>}
                         <p className="color-salmon">{errorMessage}</p>

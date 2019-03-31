@@ -85,7 +85,7 @@ class ToolComponent extends React.Component {
 
                         <TextField label="Size of Combinations (k)" value={combinationSize}
                             onChange={this.setCombinationSize.bind(this)}
-                            maxLength="2" placeholder="0" style={{ marginTop: '20px', width: '143px' }} />
+                            maxLength="2" placeholder="0" style={{ marginTop: '20px' }} />
 
                         {isLoading && <p>Loading...</p>}
                         <p className="color-salmon">{errorMessage}</p>

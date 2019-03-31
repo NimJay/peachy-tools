@@ -82,7 +82,7 @@ class ToolComponent extends React.Component {
                         <div style={{ display: 'inline-block', width: '50%', verticalAlign: 'top' }}>
                             <TextField label="Original Servings" value={fromServings}
                                 onChange={this.setFromServings.bind(this)}
-                                maxLength="2" placeholder="0" style={{ width: '100px' }} />
+                                maxLength="2" placeholder="0" />
                             <textarea value={recipe} onChange={this.setRecipe.bind(this)}
                                 style={{ marginTop: '20px', height: '400px', fontSize: '18px', lineHeight: '1.5em' }}
                                 placeholder="Type your recipe here..." autoFocus={true}
@@ -92,7 +92,7 @@ class ToolComponent extends React.Component {
                         <div style={{ display: 'inline-block', width: '50%', verticalAlign: 'top' }}>
                             <TextField label="New Servings" value={toServings}
                                 onChange={this.setToServings.bind(this)}
-                                maxLength="2" placeholder="0" style={{ width: '100px' }} />
+                                maxLength="2" placeholder="0" />
                             {isLoading && <p>Loading...</p>}
                             {!errorMessage && !isLoading && scaledStrNumTokens &&
                                 <output style={{ marginTop: '20px', borderLeft: 'solid 2px rgba(0, 0, 0, 0)',
