@@ -22,6 +22,7 @@ const URL_CACHE_INFO = [
   { url: '/', cacheAsap: true },
 
   // Tools
+  { url: '/bingo-generator' },
   { url: '/character-counter' },
   { url: '/charades-generator' },
   { url: '/combinations-generator' },
@@ -33,6 +34,7 @@ const URL_CACHE_INFO = [
 
   // JS
   { url: '/js/v7/peachytools.js', cacheAsap: true },
+  { url: '/js/v7/bingo-generator.peachytools.js' },
   { url: '/js/v7/character-counter.peachytools.js' },
   { url: '/js/v7/charades-generator.peachytools.js' },
   { url: '/js/v7/combinations-generator.peachytools.js' },

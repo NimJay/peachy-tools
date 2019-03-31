@@ -2,6 +2,12 @@
 
 $TOOLS = [
     [
+        'url' => 'bingo-generator',
+        'name' => 'Bingo Generator',
+        'description' => 'Generate 5x5 B-I-N-G-O cards online.'
+    ],
+
+    [
         'url' => 'character-counter',
         'name' => 'Character Counter',
         'description' => 'Count the number of characters in some text.'

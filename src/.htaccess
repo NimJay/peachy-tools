@@ -4,6 +4,7 @@ RewriteRule ^contribute$ index.php
 RewriteRule ^purpose$ index.php
 
 # Tools
+RewriteRule ^bingo-generator$ index.php
 RewriteRule ^character-counter$ index.php
 RewriteRule ^charades-generator$ index.php
 RewriteRule ^combinations-generator$ index.php

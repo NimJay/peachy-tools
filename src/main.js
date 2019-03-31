@@ -13,6 +13,7 @@ app.use(express.static(__dirname));
 
 // Send index.html for Tools.
 var sendIndex = (req, res) => {res.sendFile(__dirname + '/index.html');}
+app.get('/bingo-generator', sendIndex);
 app.get('/character-counter', sendIndex);
 app.get('/charades-generator', sendIndex);
 app.get('/combinations-generator', sendIndex);

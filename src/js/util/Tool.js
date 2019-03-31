@@ -10,6 +10,14 @@
  */
 const TOOLS = [
     {
+        url: 'bingo-generator',
+        name: 'Bingo Generator',
+        description: 'Generate 5x5 B-I-N-G-O cards online.',
+        keywords: [
+            'bingo', 'card', 'five', 'counter', 'game', 'number', 'square'
+        ]
+    },
+    {
         url: 'character-counter',
         name: 'Character Counter',
         description: 'Count the number of characters in some text.',
