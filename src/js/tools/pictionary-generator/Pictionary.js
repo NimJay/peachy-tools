@@ -68,7 +68,7 @@ const PICTIONARIES = [
 {pictionary: "Rice Pudding"},
 {pictionary: "Salad"},
 {pictionary: "Spaghetti"},
-{pictionary: "Starberry Milkshake"},
+{pictionary: "Strawberry Milkshake"},
 {pictionary: "Waffle"},
 {pictionary: "Sundae"},
 {pictionary: "Taco"},
