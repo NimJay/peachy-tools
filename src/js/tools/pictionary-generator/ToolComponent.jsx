@@ -53,6 +53,7 @@ class ToolComponent extends React.Component {
                     <Selections selections={['Easy', 'Hard', 'All']}
                         selection={difficulty}
                         name="Difficulty"
+                        style={{ 'marginTop': '30px', 'textAlign': 'right' }}
                         onSelect={this.setDifficulty.bind(this)} />
                 </form>
             </main>
