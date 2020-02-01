@@ -33,7 +33,7 @@ class ToolComponent extends React.Component {
                     <form>
 
                         <div style={{ maxWidth: '100%', overflowX: 'auto' }}>
-                            <table style={{ fontSize: '26px' }}>
+                            <table style={{ fontSize: '26px', margin: 'auto' }}>
                                 <thead>
                                     <tr>
                                         <th>B</th><th>I</th><th>N</th><th>G</th><th>O</th>
