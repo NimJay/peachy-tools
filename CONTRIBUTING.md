@@ -13,13 +13,12 @@ To create a new Tool as [/my-new-tool](https://peachytools.com/my-new-tool)
 4. Add it to `Tool.php`.
 5. Add it to `swoff.js`.
 6. Add it to `main.js`.
-7. Add it to `sitemap.xml`.
-8. Add it to `.htaccess`.
+7. Add it to `tools.json`.
 
 
 ## Deployment Checklist
 1. Bumb up version of Peachy Tools.
 2. Upload `index.php`, `swoff.js`, `peachy-tools.css`, and `js/v*/*`.
 3. Uncomment Google Analytics in `index.php`.
-4. If new tool added, upload `.htaccess`, and `Tools.php`.
-5. If new tool added, run `npm run generate-code` and upload `sitemap.xml`.
+4. If new tool added, run `npm run generate-code`.
+5. If new tool added, upload `Tools.php`, `sitemap.xml`, and `.htaccess`.

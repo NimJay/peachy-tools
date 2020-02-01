@@ -52,4 +52,4 @@ function generateSitemapXml() {
     fs.writeFileSync(SITEMAP_LOCATION + 'sitemap.xml', contents);
 }
 
-generateSitemapXml();
+exports.generateSitemapXml = generateSitemapXml;
