@@ -26,6 +26,15 @@
         ]
     },
     {
+        "url": "codenames",
+        "name": "Codenames",
+        "description": "Generate 5-by-5 word boards for the Codenames game.",
+        "keywords": [
+            "codenames", "code", "names", "word", "generator", "board", "spymaster",
+            "party", "group", "game", "czech"
+        ]
+    },
+    {
         "url": "combinations-generator",
         "name": "Combinations Generator",
         "description": "Generate all combinations of any size from a set of items.",
