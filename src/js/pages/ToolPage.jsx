@@ -19,7 +19,8 @@ class ToolPage extends React.Component {
             importingTool: false, // true iff a Tool is currently being imported.
             toolImported: false, // true iff the Tool is successfully imported.
             lastImportId: -1, // Each import Promise has an ID.
-            initialTitle: document.title // Save the title of the document.
+            initialTitle: document.title, // Save the title of the document.
+            isToolImportError: false,
         };
     }
 
@@ -59,7 +60,8 @@ class ToolPage extends React.Component {
         // New import.
         lastImportId++;
         this.setState({
-            'importingTool': true, 'lastImportId': lastImportId, 'tool': tool
+            'importingTool': true, 'lastImportId': lastImportId, 'tool': tool,
+            'isToolImportError': false
         });
 
         promise
@@ -84,7 +86,7 @@ class ToolPage extends React.Component {
         let { lastImportId } = this.state;
         if (lastImportId != importId) return null;
 
-        this.setState({ toolImported: false, importingTool: false });
+        this.setState({ toolImported: false, importingTool: false, isToolImportError: true });
     }
 
 
@@ -97,7 +99,7 @@ class ToolPage extends React.Component {
 
     render() {
 
-        let { tool, importingTool, toolImported, toolComponent } = this.state,
+        let { tool, importingTool, toolImported, toolComponent, isToolImportError } = this.state,
             className = 'page toolpage' +
                 (importingTool ? ' loading': '');
 
@@ -107,6 +109,7 @@ class ToolPage extends React.Component {
                 {toolImported ? toolComponent : null}
                 {tool === null ? <NotFoundSection /> : null}
                 {toolImported ? <Header tool={tool} /> : null}
+                {isToolImportError ? <ToolImportErrorSection toolName={tool.name} /> : null}
 
                 <aside>
                     <SuggestionsSection />
@@ -137,6 +140,17 @@ const NotFoundSection = () => (
         <div className='container'>
             <h1>Page Not Found</h1>
             <p>The requested page or tool could not be found.</p>
+        </div>
+    </section>
+);
+
+
+// <ToolImportErrorSection>
+const ToolImportErrorSection = ({ toolName }) => (
+    <section>
+        <div className='container'>
+            <h1>{toolName} failed to load.</h1>
+            <p>Oops! If your Internet working?</p>
         </div>
     </section>
 );
