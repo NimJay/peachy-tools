@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "webpack": "webpack --config conf/webpack.conf.js",
-    "node-sass": "node-sass --watch --include-path css css/peachytools.scss css/peachytools.css"
+    "node-sass": "node-sass --watch --include-path css css/peachytools.scss css/peachytools.css",
+    "generate-code": "node js/code-generators/sitemap-xml-generator.js"
   },
   "author": "Nim",
   "license": "Apache-2.0",
