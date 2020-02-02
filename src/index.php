@@ -36,7 +36,7 @@
 
 		<!-- I M P O R T -->
         <!-- Roboto Font --><link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
-		<!-- peachytools.css --><link type="text/css" rel="stylesheet" href="/css/peachytools.css?v=8" />
+		<!-- peachytools.css --><link type="text/css" rel="stylesheet" href="/css/peachytools.css?v=9" />
 		<!-- Babel Polyfill --><script src="/node_modules/babel-polyfill/dist/polyfill.min.js"></script>
 
 	</head>
@@ -51,6 +51,6 @@
 			   </section>
 		   </div>
            <!-- index.js -->
-           <script src="/js/v8/peachytools.js"></script>
+           <script src="/js/v9/peachytools.js"></script>
 	</body>
 </html>
