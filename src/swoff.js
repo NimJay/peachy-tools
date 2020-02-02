@@ -7,7 +7,7 @@
  */
 
 
-const CACHE_NAME = 'peachytools8';
+const CACHE_NAME = 'peachytools9';
 
 
 /**
@@ -34,19 +34,19 @@ const URL_CACHE_INFO = [
   { url: '/recipe-converter' },
 
   // JS
-  { url: '/js/v8/peachytools.js', cacheAsap: true },
-  { url: '/js/v8/bingo-generator.peachytools.js' },
-  { url: '/js/v8/character-counter.peachytools.js' },
-  { url: '/js/v8/charades-generator.peachytools.js' },
-  { url: '/js/v8/codenames.peachytools.js' },
-  { url: '/js/v8/combinations-generator.peachytools.js' },
-  { url: '/js/v8/exam-timer.peachytools.js' },
-  { url: '/js/v8/permutations-generator.peachytools.js' },
-  { url: '/js/v8/pictionary-generator.peachytools.js' },
-  { url: '/js/v8/random-number-generator.peachytools.js' },
-  { url: '/js/v8/recipe-converter.peachytools.js' },
+  { url: '/js/v9/peachytools.js', cacheAsap: true },
+  { url: '/js/v9/bingo-generator.peachytools.js' },
+  { url: '/js/v9/character-counter.peachytools.js' },
+  { url: '/js/v9/charades-generator.peachytools.js' },
+  { url: '/js/v9/codenames.peachytools.js' },
+  { url: '/js/v9/combinations-generator.peachytools.js' },
+  { url: '/js/v9/exam-timer.peachytools.js' },
+  { url: '/js/v9/permutations-generator.peachytools.js' },
+  { url: '/js/v9/pictionary-generator.peachytools.js' },
+  { url: '/js/v9/random-number-generator.peachytools.js' },
+  { url: '/js/v9/recipe-converter.peachytools.js' },
 
-  { url: '/css/peachytools.css?v=8', cacheAsap: true },
+  { url: '/css/peachytools.css?v=9', cacheAsap: true },
   { url: '/favicon.png', cacheAsap: true },
   { url: '/img/favicon-192.png', cacheAsap: true },
 ];
