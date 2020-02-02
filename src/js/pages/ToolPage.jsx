@@ -151,7 +151,7 @@ const ToolImportErrorSection = ({ toolName }) => (
     <section>
         <div className='container'>
             <h1>{toolName} failed to load.</h1>
-            <p>Oops! If your Internet working?</p>
+            <p>Oops! Is your Internet working?</p>
         </div>
     </section>
 );
