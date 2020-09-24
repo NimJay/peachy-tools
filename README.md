@@ -28,11 +28,11 @@ To run Peachy Tools on your machine:
 3. `npm install` to install Node.js dependencies.
 4. `npm run webpack` to compile PeachyTools.jsx into /src/js/bundle/.
 5. `npm run node-sass` to compile the SASS in /src/scss/ to peachytools.css.
-6. `node main.js` to serves Peachy Tools.
+6. `npm run server` to serves Peachy Tools.
 
 Use the following command during development from **/src/**:
 ```
-npm run webpack & npm run node-sass & node main.js
+npm run webpack & npm run node-sass & npm run server
 ```
 
 ## Be simple.
