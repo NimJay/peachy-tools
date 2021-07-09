@@ -46,6 +46,11 @@ class SuggestionsSection extends React.Component {
             );
         }
 
+        // The <SuggestionsSection> is temporarily disabled.
+        // Since we moved our back-end from PHP to Node.js,
+        // we have to reimplement the "/php/create-suggestion" endpoint in Node.js.
+        return null;
+
         return (
             <section>
                 <div className='container'>
