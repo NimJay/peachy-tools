@@ -8,7 +8,7 @@ const express = require('express');
 const buildPage = require('./build-page.js');
 
 const NON_TOOL_PATHS = [ '/', '/contribute' ];
-const PORT = 3003;
+const PORT = process.env.PORT || 8080;
 
 const app = express();
 
