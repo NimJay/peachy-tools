@@ -16,7 +16,7 @@ const DEFAULT_DESCRIPTION = 'Every little tool you need, in one place.';
 function buildPage(pagePath) {
 
     const tool = getToolByPath(pagePath);
-    const title = tool ? tool.title : DEFAULT_TITLE;
+    const title = tool ? `${tool.name} - Peachy Tools` : DEFAULT_TITLE;
     const description = tool ? tool.description : DEFAULT_DESCRIPTION;
 
     const page = {};
