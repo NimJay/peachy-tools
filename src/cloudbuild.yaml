@@ -1,0 +1,16 @@
+# This file is used by Google Cloud Build.
+
+steps:
+
+# Build the Docker image.
+- name: 'gcr.io/cloud-builders/docker'
+  args:
+    - 'build'
+    - '-t'
+    - 'us-east1-docker.pkg.dev/peachy-tools-319613/peachy-tools:9.0'
+    - '.'
+  dir: 'src'
+
+# Push the Docker image to the Google Artifact Registry.
+images:
+  - 'us-east1-docker.pkg.dev/peachy-tools-319613/peachy-tools:9.0'
