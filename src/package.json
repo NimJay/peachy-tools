@@ -4,6 +4,8 @@
   "description": "Every little tool you need, in one place.",
   "main": "main.js",
   "scripts": {
+    "build-front-end-css": "node-sass --include-path css css/peachytools.scss css/peachytools.css",
+    "build-front-end-js": "webpack --config conf/webpack-no-watch.conf.js",
     "webpack": "webpack --config conf/webpack.conf.js",
     "node-sass": "node-sass --watch --include-path css css/peachytools.scss css/peachytools.css",
     "generate-code": "node js/code-generators/run-code-generators.js",
