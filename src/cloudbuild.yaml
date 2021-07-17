@@ -7,9 +7,15 @@ steps:
   args:
     - 'build'
     - '-t'
-    - 'us-east1-docker.pkg.dev/peachy-tools-319613/peachy-tools:9.0'
+    - 'us-east1-docker.pkg.dev/peachy-tools-319613/peachy-tools-repo/peachy-tools:9.0'
     - '.'
   dir: 'src'
+
+# Push the Docker image to the Google Artifact Registry.
+- name: 'gcr.io/cloud-builders/docker'
+  args:
+    - 'push'
+    - 'us-east1-docker.pkg.dev/peachy-tools-319613/peachy-tools-repo/peachy-tools:9.0'
 
 # Deploy the Docker image to Cloud Run.
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
@@ -19,11 +25,11 @@ steps:
     - 'deploy'
     - 'peachy-tools'
     - '--image'
-    - 'us-east1-docker.pkg.dev/peachy-tools-319613/peachy-tools:9.0'
+    - 'us-east1-docker.pkg.dev/peachy-tools-319613/peachy-tools-repo/peachy-tools:9.0'
     - '--region'
     - 'us-east1'
     - '--platform'
     - 'managed'
 
 images:
-  - 'us-east1-docker.pkg.dev/peachy-tools-319613/peachy-tools:9.0'
+  - 'us-east1-docker.pkg.dev/peachy-tools-319613/peachy-tools-repo/peachy-tools:9.0'
