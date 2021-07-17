@@ -1,0 +1,18 @@
+FROM node:12-slim
+WORKDIR /app
+
+# Install npm dependencies.
+COPY package*.json ./
+RUN npm install
+
+# Copy code over.
+COPY . .
+
+# Build front-end.
+RUN npm run build-front-end-css
+RUN npm run build-front-end-js
+
+# Run server!
+ENV PORT=8080
+EXPOSE 8080
+CMD [ "npm", "start" ]
