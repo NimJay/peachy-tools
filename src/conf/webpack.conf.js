@@ -4,9 +4,9 @@ module.exports = {
 	mode: 'production',
 	entry: './js/PeachyTools.jsx',
 	output: {
-		path: path.resolve(__dirname, '../js/v9/'),
+		path: path.resolve(__dirname, '../js/v10.0/'),
 		filename: 'peachytools.js',
-		publicPath: '/js/v9/',
+		publicPath: '/js/v10.0/',
 		chunkFilename: '[name].peachytools.js',
     },
 	watch: true,

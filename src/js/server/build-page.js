@@ -73,7 +73,7 @@ function buildPage(pagePath) {
 
 `/* Imports */+`
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
-<link type="text/css" rel="stylesheet" href="/css/peachytools.css?v=9" />
+<link type="text/css" rel="stylesheet" href="/css/peachytools.css?v=10.0" />
 <script src="/node_modules/babel-polyfill/dist/polyfill.min.js"></script>
 
 </head>
@@ -88,7 +88,7 @@ function buildPage(pagePath) {
 </section>
 </div>
 
-<script src="/js/v9/peachytools.js"></script>
+<script src="/js/v10.0/peachytools.js"></script>
 
 </body>
 </html>`;
