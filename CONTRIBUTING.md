@@ -14,8 +14,15 @@ To create a new Tool as [/my-new-tool](https://peachytools.com/my-new-tool)
 
 
 ## Deployment Checklist
-1. Bumb up version of Peachy Tools.
-2. Upload `index.php`, `swoff.js`, `peachy-tools.css`, and `js/v*/*`.
-3. Uncomment Google Analytics in `index.php`.
-4. If new tool added, run `npm run generate-code`.
-5. If new tool added, upload `Tools.php`, `sitemap.xml`, and `.htaccess`.
+1. Push a commit that bumps up the version of Peachy Tools by modifying these files:
+    * `build-page.js`
+    * `webpack.conf.js`
+    * `swoff.js`
+1. Use Google Cloud's _Cloud Shell_.
+1. Either `git clone https://github.com/NimJay/peachy-tools.git` or `git pull` on the existing repository clone.
+1. Go into the `src/` folder.
+1. Uncomment the Google Analytics `<script>` in `server/build-page.js`.
+1. `npm run build-front-end-css`
+1. `npm run build-front-end-js`
+1. If a new tool was added: `npm run generate-code`.
+1. Upload the code to Google App Engine: `gcloud app deploy`
