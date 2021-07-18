@@ -1,7 +1,5 @@
 /**
  * This file starts up a Node.js Express web server.
- * This is only used during development.
- * During production, an Apache HTTP Server is used instead.
  */
 
 const express = require('express');
