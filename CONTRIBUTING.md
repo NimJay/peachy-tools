@@ -21,6 +21,9 @@ To create a new Tool as [/my-new-tool](https://peachytools.com/my-new-tool)
 1. Use Google Cloud's _Cloud Shell_.
 1. Either `git clone https://github.com/NimJay/peachy-tools.git` or `git pull` on the existing repository clone.
 1. Go into the `src/` folder.
+1. Reinstall npm modules:
+    * `rm -r node_modules`
+    * `npm install`.
 1. Uncomment the Google Analytics `<script>` in `server/build-page.js`.
 1. `npm run build-front-end-css`
 1. `npm run build-front-end-js`
