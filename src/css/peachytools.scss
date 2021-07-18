@@ -125,14 +125,6 @@ footer {
     div.container > a {margin-right: 16px;}
 }
 
-// <ContributePage>
-.contributepage {
-    section:first-child {
-        color: $color-white;
-        background-color: $color-salmon;
-    }
-}
-
 // <ToolPage>
 .page.toolpage {
     &.loading {cursor: progress;}

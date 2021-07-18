@@ -15,11 +15,6 @@ const SITEMAP_START = `<?xml version="1.0" encoding="UTF-8"?>
         <loc>https://peachytools.com/</loc>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://peachytools.com/contribute</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.4</priority>
     </url>`;
 
 const SITEMAP_END = `

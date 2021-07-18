@@ -10,7 +10,6 @@ const FreeSection = () => (
                 Peachy Tools is non-profit.<br />
                 We will never sell ads. We plan to run on donations.
             </p>
-            <Link to='/contribute' className='button'>CONTRIBUTE</Link>
         </div>
     </section>
 );

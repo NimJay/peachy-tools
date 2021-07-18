@@ -10,7 +10,6 @@ import {
 // Pages
 import HomePage from './pages/HomePage.jsx'
 import AboutPage from './pages/AboutPage.jsx'
-import ContributePage from './pages/ContributePage.jsx'
 import PurposePage from './pages/PurposePage.jsx'
 import ToolPage from './pages/ToolPage.jsx'
 
@@ -24,7 +23,6 @@ const PeachyTools = () => (
             <Switch>
                 <Route exact path="/" component={HomePage} />
                 <Route path="/about" component={AboutPage} />
-                <Route path="/contribute" component={ContributePage} />
                 <Route path="/purpose" component={PurposePage} />
                 <Route path="/:tool" component={ToolPage} />
             </Switch>
