@@ -66,7 +66,11 @@ const SlotRowTr = ({ slots, onClickSlot }) => {
 // <SlotTd>
 const SlotTd = ({ slot, onClickSlot }) => {
     const buttonStyle = {
-        fontSize: '18px', width: '100%', padding: '15px 8px', minWidth: '120px'
+        fontSize: '18px',
+        width: '100%',
+        padding: '15px 8px',
+        minWidth: '120px',
+        color: 'rgba(0, 0, 0, 0.7)',
      };
 
     // Determine background-color.

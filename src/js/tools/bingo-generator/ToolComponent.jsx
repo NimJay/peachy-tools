@@ -73,7 +73,12 @@ const BingoSquareTd = ({ bingoSquare, onToggleSquare }) => {
         onToggleSquare();
     };
 
-    let buttonStyle = { fontSize: '17px', padding: '5px', minWidth: '40px' };
+    let buttonStyle = {
+        fontSize: '17px',
+        padding: '5px',
+        minWidth: '40px',
+        color: 'rgba(0, 0, 0, 0.8)',
+    };
 
     if (!bingoSquare.isMarked) {
         buttonStyle["backgroundColor"] = "rgba(0, 0, 0, 0)";
