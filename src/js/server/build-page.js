@@ -27,6 +27,17 @@ function buildPage(pagePath) {
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta charset="utf-8">
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Production only
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108360287-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-108360287-1');
+</script>
+-->
+
 <title>${title}</title>
 <meta name="description" content="${description}">
 <meta name="author" content="Peachy Tools">
