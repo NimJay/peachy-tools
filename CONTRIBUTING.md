@@ -23,9 +23,9 @@ To create a new Tool as [/my-new-tool](https://peachytools.com/my-new-tool)
 1. Go into the `src/` folder.
 1. Reinstall npm modules:
     * `rm -r node_modules`
-    * `npm install`.
-1. Uncomment the Google Analytics `<script>` in `server/build-page.js`.
+    * `npm install`
+1. Uncomment the Google Analytics `<script>` in `js/server/build-page.js`.
 1. `npm run build-front-end-css`
 1. `npm run build-front-end-js`
-1. If a new tool was added: `npm run generate-code`.
+1. If a new tool was added: `npm run generate-code`
 1. Upload the code to Google App Engine: `gcloud app deploy`
