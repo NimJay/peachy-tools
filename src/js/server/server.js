@@ -18,6 +18,13 @@ app.get('/node_modules/babel-polyfill/dist/polyfill.min.js', (req, res) => {
     res.sendFile(__dirname + '/node_modules/babel-polyfill/dist/polyfill.min.js');
 });
 
+// Nim used to host his personal blog posts at peachytools.com/articles.
+app.get('/articles*', (req, res) => {
+    const destinationPath = req.path.replace('articles', 'blog');
+    const destinationUrl = `https://nim.emuxo.com${destinationPath}`;
+    res.redirect(301, destinationUrl);
+});
+
 // Build and serve pages.
 app.use((req, res) => {
     const page = buildPage(req.path);
